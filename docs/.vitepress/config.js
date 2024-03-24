@@ -14,9 +14,12 @@ export default defineConfig({
 
     nav: [
       { text: '主页', link: '/' },
-      { text: '文章', link: '/debounce-throttle' },
+      { text: '所有文章', link: '/debounce-throttle' },
       { text: '关于我', link: '/about-me' }
     ],
+    search: {
+      provider: 'local'
+    },
     outline: {
       label: '页面导航'
     },
