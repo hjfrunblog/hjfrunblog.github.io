@@ -3,15 +3,15 @@
 layout: home
 
 hero:
-  name: "My Awesome Blog"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: '渐风的个人博客'
+  text: '天与弗取，反受其咎；时至不行，反受其殃'
+  tagline: 让写文章变得更容易!
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: Markdown 示例
       link: /markdown-examples
     - theme: alt
-      text: API Examples
+      text: API 示例
       link: /api-examples
 
 features:
@@ -22,4 +22,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
