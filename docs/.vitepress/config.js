@@ -8,12 +8,36 @@ export default defineConfig({
     // logo: 'https://github.githubassets.com/favicons/favicon-dark.png',
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
+
     nav: [
       { text: '主页', link: '/' },
-      { text: '文章', link: '/markdown-examples' },
+      { text: '文章', link: '/debounce-throttle' },
       { text: '关于我', link: '/about-me' }
     ],
+    outline: {
+      label: '页面导航'
+    },
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'short',
+        timeStyle: 'medium'
+      }
+    },
+    footer: {
+      message: '基于 MIT 许可发布',
+      copyright: `版权所有 © 2019-${new Date().getFullYear()} hjfrun`
+    },
 
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
+    returnToTopLabel: '回到顶部',
+    sidebarMenuLabel: '菜单',
+    darkModeSwitchLabel: '主题',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式',
     sidebar: [
       {
         text: '文章列表',
