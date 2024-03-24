@@ -4,8 +4,11 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: '渐风的个人博客',
   description: '天与弗取，反受其咎；时至不行，反受其殃',
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' }]
+  ],
+
   themeConfig: {
-    // logo: 'https://github.githubassets.com/favicons/favicon-dark.png',
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
 
@@ -17,6 +20,7 @@ export default defineConfig({
     outline: {
       label: '页面导航'
     },
+
     lastUpdated: {
       text: '最后更新于',
       formatOptions: {
@@ -24,10 +28,11 @@ export default defineConfig({
         timeStyle: 'medium'
       }
     },
-    footer: {
-      message: '基于 MIT 许可发布',
-      copyright: `版权所有 © 2019-${new Date().getFullYear()} hjfrun`
-    },
+
+    // footer: {
+    //   message: '基于 MIT 许可发布',
+    //   copyright: `版权所有 © 2019-${new Date().getFullYear()} hjfrun`
+    // },
 
     docFooter: {
       prev: '上一页',
@@ -43,9 +48,7 @@ export default defineConfig({
         text: '文章列表',
         items: [
           { text: '防抖和节流', link: '/debounce-throttle' },
-          { text: '个人随便写的文章', link: '/personal-article' },
-          { text: 'Markdown 示例', link: '/markdown-examples' },
-          { text: 'API 示例', link: '/api-examples' }
+          { text: '新博客第一篇的文章', link: '/first-article' }
         ]
       }
     ],

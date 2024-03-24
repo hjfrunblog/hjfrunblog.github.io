@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: '渐风的个人博客'
-  text: '天与弗取，反受其咎；时至不行，反受其殃'
-  tagline: 让写文章变得更容易!
+  name: 渐风的个人博客
+  text: 欲速不达，只争朝夕
+  tagline: 天与弗取，反受其咎；时至不行，反受其殃
   actions:
     - theme: brand
       text: Markdown 示例
