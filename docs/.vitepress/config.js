@@ -43,10 +43,9 @@ export default defineConfig({
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式',
     sidebar: {
-      '/javascript/': { base: '/javascript/', items: sidebarJavascript() },
+      '/tech/': { base: '/tech/', items: sidebarTech() },
       '/life/': { base: '/life/', items: sidebarLife() }
     },
-
     socialLinks: [{ icon: 'github', link: 'https://github.com/hjfrun' }]
   },
   sitemap: {
@@ -58,9 +57,9 @@ function nav() {
   return [
     { text: '主页', link: '/' },
     {
-      text: 'JavaScript',
-      link: '/javascript/debounce-throttle',
-      activeMatch: '/javascript/'
+      text: '技术',
+      link: '/tech/javascript/debounce-throttle',
+      activeMatch: '/tech/'
     },
     {
       text: '生活',
@@ -71,11 +70,36 @@ function nav() {
   ]
 }
 
-function sidebarJavascript() {
+function sidebarTech() {
   return [
     {
-      text: 'JavaScript技术要点',
-      items: [{ text: '防抖和节流', link: 'debounce-throttle' }]
+      text: 'JavaScript',
+      base: '/tech/javascript/',
+      collapsed: true,
+      items: [
+        {
+          text: 'map、filter、reduce',
+          link: 'map-filter-reduce'
+        },
+        {
+          text: '防抖和节流',
+          link: 'debounce-throttle'
+        },
+        {
+          text: 'call、apply、bind',
+          link: 'call-apply-bind'
+        }
+      ]
+    },
+    {
+      text: 'Vue',
+      base: '/tech/vue/',
+      items: [
+        {
+          text: 'Vue2 数据绑定的原理',
+          link: 'vue-data-binding'
+        }
+      ]
     }
   ]
 }
