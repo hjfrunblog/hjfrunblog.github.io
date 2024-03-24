@@ -5,9 +5,9 @@
   "description": "",
   "scripts": {
     "dev": "vitepress dev docs --host",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
-    "docs:preview": "vitepress preview docs"
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs",
+    "preview": "vitepress preview docs"
   },
   "keywords": [],
   "author": "",
