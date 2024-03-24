@@ -12,11 +12,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
 
-    nav: [
-      { text: '主页', link: '/' },
-      { text: '所有文章', link: '/debounce-throttle' },
-      { text: '关于我', link: '/about-me' }
-    ],
+    nav: nav(),
     search: {
       provider: 'local'
     },
@@ -46,15 +42,10 @@ export default defineConfig({
     darkModeSwitchLabel: '主题',
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式',
-    sidebar: [
-      {
-        text: '文章列表',
-        items: [
-          { text: '防抖和节流', link: '/debounce-throttle' },
-          { text: '新博客第一篇的文章', link: '/first-article' }
-        ]
-      }
-    ],
+    sidebar: {
+      '/javascript/': { base: '/javascript/', items: sidebarJavascript() },
+      '/life/': { base: '/life/', items: sidebarLife() }
+    },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/hjfrun' }]
   },
@@ -62,3 +53,38 @@ export default defineConfig({
     hostname: 'https://hjfrun.com'
   }
 })
+
+function nav() {
+  return [
+    { text: '主页', link: '/' },
+    {
+      text: 'JavaScript',
+      link: '/javascript/debounce-throttle',
+      activeMatch: '/javascript/'
+    },
+    {
+      text: '生活',
+      link: '/life/first-article',
+      activeMatch: '/life/'
+    },
+    { text: '关于我', link: '/about-me' }
+  ]
+}
+
+function sidebarJavascript() {
+  return [
+    {
+      text: 'JavaScript技术要点',
+      items: [{ text: '防抖和节流', link: 'debounce-throttle' }]
+    }
+  ]
+}
+
+function sidebarLife() {
+  return [
+    {
+      text: '生活',
+      items: [{ text: '新博客第一篇的文章', link: 'first-article' }]
+    }
+  ]
+}
