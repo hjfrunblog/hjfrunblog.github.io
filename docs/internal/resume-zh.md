@@ -2,7 +2,6 @@
 title: 贺剑峰简历
 footer: false
 lastUpdated: false
-navbar: false
 aside: false
 ---
 
