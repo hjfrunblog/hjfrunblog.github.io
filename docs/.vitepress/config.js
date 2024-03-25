@@ -17,6 +17,7 @@ export default defineConfig({
       provider: 'local'
     },
     outline: {
+      level: 'deep',
       label: '页面导航'
     },
 
@@ -75,7 +76,7 @@ function sidebarTech() {
     {
       text: 'JavaScript',
       base: '/tech/javascript/',
-      collapsed: true,
+      collapsed: false,
       items: [
         {
           text: 'map、filter、reduce',
@@ -102,9 +103,14 @@ function sidebarTech() {
       ]
     },
     {
-      text: 'JWT',
+      text: 'JWT (JSON Web Token)',
       base: '/tech/',
       link: 'jwt'
+    },
+    {
+      text: '通过浏览器爬取数据的一种简便方法',
+      base: '/tech/',
+      link: 'browser-crawler'
     }
   ]
 }

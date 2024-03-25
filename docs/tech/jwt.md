@@ -1,6 +1,6 @@
 # JWT
 
-## 一、是什么
+## 是什么
 
 `JWT (JSON Web Token)` , 本质上就是一个字符串书写规范。作用是在用户和服务器之间传递安全可靠的信息。
 
@@ -47,7 +47,7 @@ eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ
 
 签名是对头部和载荷内容进行签名，一般情况，设置一个 `secretKey` ，对前两个结果进行 `HMACSHA25` 算法。一旦前两部分的数据被篡改。只要服务器加密用的密钥没有泄露，得到的签名肯定和之前的签名不一样。
 
-## 二、如何实现
+## 如何实现
 
 `token` 的使用分成两部分。
 
@@ -64,9 +64,9 @@ eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ
 
 在前端接收到 `token` 后，一般情况下会通过 `localStorage` 进行缓存，然后将 `token` 放到 `HTTP` 请求头 `Authorization` 中。关于 `Authorization` 的设置，前面要加上 `Bearer` ，注意后面带有空格。
 
-## 三、优缺点
+## 优缺点
 
-**优点**
+### 优点
 
 - `json` 具有通用性，所以可以跨语言
 - 组成简单，字节占用小，便于传输
@@ -74,7 +74,7 @@ eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ
 - 一处生成，多处使用，可以在分布式系统中，解决单点登录问题
 - 可以防护 `CSRF` 攻击
 
-**缺点**
+### 缺点
 
 - `payload` 部分仅仅是进行简单编码，所以只能用于存储逻辑必需的非敏感信息
 - 需要保护好加密密钥，一旦泄露后果严重
