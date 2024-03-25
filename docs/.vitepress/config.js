@@ -28,10 +28,10 @@ export default defineConfig({
       }
     },
 
-    // footer: {
-    //   message: '基于 MIT 许可发布',
-    //   copyright: `版权所有 © 2019-${new Date().getFullYear()} hjfrun`
-    // },
+    footer: {
+      message: '沪ICP备2020025326号',
+      copyright: `版权所有 © 2024 hjfrun`
+    },
 
     docFooter: {
       prev: '上一页',
@@ -63,7 +63,7 @@ function nav() {
     },
     {
       text: '生活',
-      link: '/life/first-article',
+      link: '/life/first-meet-su7',
       activeMatch: '/life/'
     },
     { text: '关于我', link: '/about-me' }
@@ -113,10 +113,7 @@ function sidebarLife() {
   return [
     {
       text: '生活',
-      items: [
-        { text: '今天看了小米SU7', link: 'first-meet-su7' },
-        { text: '新博客第一篇的文章', link: 'first-article' }
-      ]
+      items: [{ text: '今天看了小米SU7', link: 'first-meet-su7' }]
     }
   ]
 }

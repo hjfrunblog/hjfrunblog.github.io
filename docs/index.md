@@ -8,17 +8,14 @@ hero:
   tagline: 天予不取，反受其咎；时至不行，反受其殃
   actions:
     - theme: brand
-      text: Markdown 示例
-      link: /internal/markdown-examples
+      text: 热爱技术
+      link: /tech/javascript/map-filter-reduce
     - theme: alt
-      text: API 示例
-      link: /internal/api-examples
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      text: 热爱生活
+      link: /life/first-meet-su7
+# features:
+#   - title: Feature A
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#   - title: Feature B
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
