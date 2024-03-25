@@ -8,11 +8,11 @@
 
 有如下网页数据，
 
-![英雄列表](../public/tech/browser-crawler/hero_list.png)
+![英雄列表](/tech/browser-crawler/hero_list.png)
 
 通过检查页面元素，我们可以得到结构图如下：
 
-![Console分析](../public/tech/browser-crawler/element_structure.png)
+![Console分析](/tech/browser-crawler/element_structure.png)
 
 我们可以看到所有的数据都存放在一个`ul`里面，这个`ul`刚好是一个`id`选择器。假设我们这里需要获取每一个英雄的头像和名字。
 
@@ -27,7 +27,7 @@ $$('#jSearchHeroDiv > li a').map(a => {
 
 结果如下：
 
-![结果](../public/tech/browser-crawler/result.png)
+![结果](/tech/browser-crawler/result.png)
 
 说明：
 
@@ -47,7 +47,7 @@ JSON.stringify(
 ```
 
 结果如下：
-![可复制的数据](../public/tech/browser-crawler/copy_string.png)
+![可复制的数据](/tech/browser-crawler/copy_string.png)
 
 把这个数据复制到编辑器，然后通过简单格式化一下，就可以得到如下图很漂亮的格式了。
-![格式化后的数据](../public/tech/browser-crawler/format_result.png)
+![格式化后的数据](/tech/browser-crawler/format_result.png)
