@@ -1,13 +1,14 @@
 import { defineConfig } from 'vitepress'
+import { sidebarTech } from './tech'
+import { sidebarLife } from './life'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: '渐风的个人博客',
-  description: '天与弗取，反受其咎；时至不行，反受其殃',
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' }]
   ],
-
+  cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
@@ -68,58 +69,5 @@ function nav() {
       activeMatch: '/life/'
     },
     { text: '关于我', link: '/about-me' }
-  ]
-}
-
-function sidebarTech() {
-  return [
-    {
-      text: 'JavaScript',
-      base: '/tech/javascript/',
-      collapsed: false,
-      items: [
-        {
-          text: 'map、filter、reduce',
-          link: 'map-filter-reduce'
-        },
-        {
-          text: '防抖和节流',
-          link: 'debounce-throttle'
-        },
-        {
-          text: 'call、apply、bind',
-          link: 'call-apply-bind'
-        }
-      ]
-    },
-    {
-      text: 'Vue',
-      base: '/tech/vue/',
-      items: [
-        {
-          text: 'Vue2 数据绑定的原理',
-          link: 'vue-data-binding'
-        }
-      ]
-    },
-    {
-      text: 'JWT (JSON Web Token)',
-      base: '/tech/',
-      link: 'jwt'
-    },
-    {
-      text: '通过浏览器爬取数据的一种简便方法',
-      base: '/tech/',
-      link: 'browser-crawler'
-    }
-  ]
-}
-
-function sidebarLife() {
-  return [
-    {
-      text: '生活',
-      items: [{ text: '今天看了小米SU7', link: 'first-meet-su7' }]
-    }
   ]
 }

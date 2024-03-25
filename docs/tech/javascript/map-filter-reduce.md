@@ -20,7 +20,7 @@ const sum = nums.reduce((acc, cur) => acc + cur, 0)
 console.log(sum) // 10
 ```
 
-### map() and foreach()
+## map() and foreach()
 
 map() 返回新的数组，可以继续 chain 其他的函数，如 filter。foreach() 数组原地操作，不产生新的数据，其返回值无意义。
 
