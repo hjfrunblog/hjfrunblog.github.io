@@ -1,4 +1,12 @@
-## 贺剑峰
+---
+title: 贺剑峰简历
+footer: false
+lastUpdated: false
+navbar: false
+aside: false
+---
+
+# 贺剑峰
 
 9 年工作经验 ｜ 硕士 ｜ 1989 年 10 月 ｜ 男   ｜ 所在地：上海宝山 ｜ 籍贯：湖北 鄂州
 
@@ -24,7 +32,7 @@
 
 - 成绩优秀（5%），奖/助学金 3 次；通过《软件设计师》资格考试；优秀毕业生
 
-### <span class="h3color">工作经历</span>
+<span class="h3color">工作经历</span>
 
 <div class="job-record">
   <div class="job-company">奥纬企业管理咨询（上海）有限公司</div>
