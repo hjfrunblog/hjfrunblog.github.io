@@ -58,7 +58,7 @@ function nav() {
     { text: '主页', link: '/' },
     {
       text: '技术',
-      link: '/tech/javascript/debounce-throttle',
+      link: '/tech/javascript/map-filter-reduce',
       activeMatch: '/tech/'
     },
     {
@@ -100,6 +100,11 @@ function sidebarTech() {
           link: 'vue-data-binding'
         }
       ]
+    },
+    {
+      text: 'JWT',
+      base: '/tech/',
+      link: 'jwt'
     }
   ]
 }
@@ -108,7 +113,10 @@ function sidebarLife() {
   return [
     {
       text: '生活',
-      items: [{ text: '新博客第一篇的文章', link: 'first-article' }]
+      items: [
+        { text: '今天看了小米SU7', link: 'first-meet-su7' },
+        { text: '新博客第一篇的文章', link: 'first-article' }
+      ]
     }
   ]
 }
