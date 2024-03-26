@@ -34,6 +34,10 @@ export function sidebarTech() {
         {
           text: 'Tree Shaking',
           link: 'tree-shaking'
+        },
+        {
+          text: 'Vue 和 React 的异同',
+          link: 'vue-react'
         }
       ]
     },
