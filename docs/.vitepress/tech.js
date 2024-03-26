@@ -26,6 +26,14 @@ export function sidebarTech() {
         {
           text: 'Vue2 数据绑定的原理',
           link: 'vue-data-binding'
+        },
+        {
+          text: 'Vue 响应式',
+          link: 'vue-reactive'
+        },
+        {
+          text: 'Tree Shaking',
+          link: 'tree-shaking'
         }
       ]
     },
