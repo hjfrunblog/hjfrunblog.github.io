@@ -10,10 +10,7 @@ export default defineConfig({
   ],
   cleanUrls: true,
   markdown: {
-    lineNumbers: true,
-    image: {
-      lazyLoading: true
-    }
+    lineNumbers: true
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
