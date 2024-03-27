@@ -50,6 +50,11 @@ export function sidebarTech() {
       text: '浏览器直接爬取数据',
       base: '/tech/',
       link: 'browser-crawler'
+    },
+    {
+      text: 'Redis',
+      base: '/tech/',
+      link: 'learn-redis'
     }
   ]
 }
