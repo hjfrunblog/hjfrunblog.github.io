@@ -22,6 +22,7 @@ export function sidebarTech() {
     {
       text: 'Vue',
       base: '/tech/vue/',
+      collapsed: false,
       items: [
         {
           text: 'Vue2 数据绑定的原理',
