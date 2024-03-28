@@ -43,6 +43,17 @@ export function sidebarTech() {
       ]
     },
     {
+      text: '烂笔头',
+      base: '/tech/note/',
+      collapsed: false,
+      items: [
+        {
+          text: '一些正则表达式',
+          link: 'regex'
+        }
+      ]
+    },
+    {
       text: 'JWT (JSON Web Token)',
       base: '/tech/',
       link: 'jwt'
