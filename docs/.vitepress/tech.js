@@ -53,7 +53,7 @@ export function sidebarTech() {
       link: 'browser-crawler'
     },
     {
-      text: 'Redis',
+      text: 'Redis 学习笔记',
       base: '/tech/',
       link: 'learn-redis'
     }
