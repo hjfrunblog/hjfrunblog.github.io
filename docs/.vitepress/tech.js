@@ -48,6 +48,10 @@ export function sidebarTech() {
       collapsed: false,
       items: [
         {
+          text: '一些Shell脚本',
+          link: 'shell'
+        },
+        {
           text: '一些正则表达式',
           link: 'regex'
         }
