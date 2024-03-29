@@ -179,4 +179,9 @@ aside: false
     color: #418bde;
     font-weight: normal;
   }
+
+  h1 {
+    padding-top: 16px;
+  }
+
 </style>
