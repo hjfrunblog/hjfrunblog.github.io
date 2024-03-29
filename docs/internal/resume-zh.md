@@ -6,7 +6,7 @@ lastUpdated: false
 aside: false
 ---
 
-# 贺剑峰
+<div class="genius-name">贺剑峰</div>
 
 9 年工作经验 ｜ 硕士 ｜ 1989 年 10 月 ｜ 男   ｜ 所在地：上海宝山 ｜ 籍贯：湖北 鄂州
 
@@ -133,6 +133,12 @@ aside: false
 5. 钻研能力强，擅用文档及 Google，YouTube，GitHub Copilot 等。
 
 <style>
+  .genius-name {
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 20px;
+  }
+
   .job-record {
     font-size: 16px;
     font-weight: bold;
@@ -179,9 +185,4 @@ aside: false
     color: #418bde;
     font-weight: normal;
   }
-
-  h1 {
-    padding-top: 16px;
-  }
-
 </style>
