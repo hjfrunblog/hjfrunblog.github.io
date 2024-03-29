@@ -179,8 +179,4 @@ aside: false
     color: #418bde;
     font-weight: normal;
   }
-
-  .VPLocalNav {
-    display: none;
-  }
 </style>
