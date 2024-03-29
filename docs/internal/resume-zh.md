@@ -180,7 +180,7 @@ aside: false
     font-weight: normal;
   }
 
-  .VPLocalNav, .VPSkipLink {
+  .VPLocalNav {
     display: none;
   }
 </style>
