@@ -179,4 +179,8 @@ aside: false
     color: #418bde;
     font-weight: normal;
   }
+
+  .VPLocalNav, .VPSkipLink {
+    display: none;
+  }
 </style>
