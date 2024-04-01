@@ -12,7 +12,7 @@
 
 ## 防抖实现方式
 
-```js
+```js:line-numbers
 function debounce(cb, delay = 1000) {
   let timer
   return function (...args) {
@@ -28,7 +28,7 @@ function debounce(cb, delay = 1000) {
 
 ## 节流实现方式
 
-```js
+```js:line-numbers
 function throttle(cb, delay = 1000) {
   let timer
   return (...args) => {
