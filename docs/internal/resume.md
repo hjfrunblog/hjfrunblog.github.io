@@ -14,18 +14,26 @@ aside: false
 
 <span class="h3color">Educational Experience</span>
 
-<div class="academic-record">
-  <div style="width: 15%">Zhejiang University</div>
-  <div>Computer Science & Technology</div>
-  <div>Master</div>
+<div class="academic-row academic-primary">
+  <div >Zhejiang University</div>
   <div class="time-span">2012.9 ～ 2015.3</div>
 </div>
 
-<div class="academic-record">
-  <div style="width: 15%;">Hubei University of Technology</div>
+<div class="academic-row academic-secondary">
+  <div>Computer Science & Technology</div>
+  <div>Master</div>
+</div>
+
+<br/>
+
+<div class="academic-row academic-primary">
+  <div >Hubei University of Technology</div>
+  <div class="time-span">2007.9 ～ 2011.6</div>
+</div>
+
+<div class="academic-row academic-secondary">
   <div>Information and Computing Science</div>
   <div>Bachelor</div>
-  <div class="time-span">2007.9 ～ 2011.6</div>
 </div>
 
 <span class="h3color">Work Experience</span>
@@ -36,7 +44,7 @@ aside: false
   <div class="time-span job-time-span">2019.1 ～ Present</div>
 </div>
 
-Deeply involved in many domestic and foreign projects of the company, mainly responsible for front-end development and also taking into account back-end research and development. In these projects, a variety of different technology stacks and different databases were used, and participated in the entire project development process from coding to online iteration. In addition, I have accumulated experience in using multiple cloud platforms such as Azure, AWS, and Alibaba Cloud, and is able to skillfully use these platforms for cloud deployment and operation and maintenance. At the same time, there is also some experience in data processing. Including data scraping, data analysis, data display, can write many gorgeous customized charts & graphics with code, etc.
+Deeply involved in many domestic and foreign projects of the company, mainly responsible for front-end development and also taking into account back-end research and development. In these projects, a variety of different technology stacks and different databases were used, and participated in the entire project development process from coding to online iteration. In addition, I have accumulated experience in using multiple cloud platforms such as **Azure**, **AWS**, and **Alibaba Cloud**, and is able to skillfully use these platforms for cloud deployment and operation and maintenance. At the same time, there is also some experience in data processing. Including **data scraping**, data analysis, **data visualization**, can write many gorgeous customized charts & graphics with code, etc.
 
 <div class="job-record">
   <div class="job-company">Data Sense Analysis</div>
@@ -44,7 +52,7 @@ Deeply involved in many domestic and foreign projects of the company, mainly res
   <div class="time-span job-time-span">2018.3 ～ 2018.12</div>
 </div>
 
-Participated in the development of the front-end research and development of Eddie, a big data processing platform. The platform visually provides a wealth of data processing functions, such as: data reception, data inspection, data processing, data analysis, data delivery, and abnormal and fault-tolerant processing. The framework used on the front end is ReactJS.
+Participated in the development of the front-end research and development of Eddie, a big data processing platform. The platform visually provides a wealth of data processing functions, such as: data reception, data inspection, data processing, data analysis, data delivery, and abnormal and fault-tolerant processing. The framework used on the front-end is **ReactJS**.
 
 <div class="job-record">
   <div class="job-company">PPTV</div>
@@ -63,7 +71,7 @@ Mainly participated in the development iteration and maintenance of the iOS vers
   <div class="time-span">2023.1 ~ 2023.12</div>
 </div>
 
-The client is an internationally renowned comprehensive container logistics giant. Its core business covers everything from warehousing to logistics. The project was to upgrade an in-house scanning application for its warehouse department. There is an Android phone version and an RF gun version. Use a hybrid architecture. Parts that need to call the device's native capabilities are implemented using Android native, such as taking pictures, scanning, etc. Other pages and functions are implemented using Vue. The project supports Android 9 (API 28) and later systems, and the scanner supports two devices each of Zebra and Honeywell. The main functions include login, profile management, data management, pallet management, online scanning, offline scanning, multi-language, scanner shortcut key adaptation, etc. The technologies and languages used in the project mainly include Java, Vue, Docker, SQL Server, NestJS, etc. The project has been successfully launched and is running in warehouses in many countries and regions, such as Shanghai, Ningbo, India, Vietnam, etc.
+The client is an internationally renowned comprehensive container logistics giant. Its core business covers everything from warehousing to logistics. The project was to upgrade an in-house scanning application for its warehouse department. There is an Android phone version and an RF gun version. Use a hybrid architecture. Parts that need to call the device's native capabilities are implemented using **Android** native, such as taking pictures, scanning, etc. Other pages and functions are implemented using Vue. The project supports Android 9 (API 28) and later systems, and the scanner supports two devices each of **Zebra** and **Honeywell**. The main functions include login, profile management, data management, pallet management, online scanning, offline scanning, multi-language, scanner shortcut key adaptation, etc. The technologies and languages used in the project mainly include Java, **Vue**, **Docker**, **SQL Server**, **NestJS**, etc. The project has been successfully launched and is running in warehouses in many countries and regions, such as Shanghai, Ningbo, India, Vietnam, etc.
 
 I am mainly responsible for the development of modules such as Profile management, data management, homepage, multi-language, instructions for use, etc., and adapting scanner shortcut keys.
 
@@ -93,7 +101,7 @@ My main responsibility in this project is the development of the front-end Web a
   <div class="time-span">2019.11 ～ 2020.6</div>
 </div>
 
-Develop a web-version search engine to handle users’ more advanced searches
+Develop a web-version search engine to handle users’ more advanced searches.
 The client is a leader in the world-class beauty industry headquartered in France. Clients need to track content related to keywords in the beauty industry on social media. Based on the analysis of these contents, grasp the popular keywords, trends, co-mentions, and sentiment analysis of the industry. Gain valuable business insights.
 
 My task is to create a Web app based on the Vue framework to facilitate customers to obtain data from the back end according to the input keywords and filter options, and then display the data in the form of rich charts and interact. In order to connect with Microsoft Power BI, I wrote a custom Visual with TypeScript. The project integrates the Azure Active Directory required by the customer to manage user authentication.
@@ -109,15 +117,15 @@ As the main R&D engineer, I participate in sorting out the main data flow of thi
 
 <span class="h3color">Qualifications</span>
 
-1. Proficient in notable programming languages JavaScript, Python, Objective-C, Swift, and Java. And have rich practical development experience.
-2. Good at front-end development. Mainly based on the currently popular Vue framework, and also has some experience in React. Ability to use Cypress for automated testing.
-3. Proficient in back-end Restful API development, mainly based on NodeJS, ExpressJS, NestJS and other related technologies.
-4. Proficient in container technologies related to Docker, and familiar with some technologies related to cloud native, such as Kubernetes, Serverless, etc.
-5. Proficient in database development, such as MongoDB, MYSQL, SQL Server, SQLite, indexedDB, etc.
-6. Familiar with popular CI/CD processes and tools, such as GitHub Actions and Jenkins
-7. Familiar with Data Scraping, Data Analysis and Data Visualization, etc.
-8. Familiar with common BI tools such as Qlik Sense, Microsoft Power BI. Not only can use it proficiently, but also write extended visual components based on project needs.
-9. Development experience on multiple cloud platforms, such as Azure, AWS and Alibaba Cloud.
+1. Proficient in notable programming languages **JavaScript**, **Python**, Objective-C, Swift, and Java. And have rich practical development experience.
+2. Good at front-end development. Mainly based on the currently popular **Vue** framework, and also has some experience in **ReactJS**. Ability to use **Cypress** for automated testing.
+3. Proficient in back-end Restful API development, mainly based on **NodeJS**, **ExpressJS**, **NestJS** and other related technologies.
+4. Proficient in container technologies related to **Docker**, and familiar with some technologies related to cloud native, such as **Kubernetes**, Serverless, etc.
+5. Proficient in database development, such as **MongoDB**, **MYSQL**, **SQL Server**, SQLite, Redis, indexedDB, etc.
+6. Familiar with popular CI/CD processes and tools, such as **GitHub Actions** and Jenkins
+7. Familiar with **Data Scraping**, **Data Analysis** and **Data Visualization**, etc.
+8. Familiar with common BI tools such as **Qlik Sense**, **Microsoft Power BI**. Not only can use it proficiently, but also write extended visual components based on project needs.
+9. Development experience on multiple cloud platforms, such as **Azure**, **AWS** and **Alibaba Cloud**.
 
 <span class="h3color">Personal advantage</span>
 
@@ -146,11 +154,18 @@ As the main R&D engineer, I participate in sorting out the main data flow of thi
     width: 45%;
   }
 
-  .academic-record {
+  .academic-row {
     display: flex;
     justify-content: space-between;
     font-size: 16px;
+  }
+
+  .academic-primary {
     font-weight: bold;
+  }
+
+  .academic-secondary {
+    font-style: italic;
   }
 
   .h3color {
