@@ -20,8 +20,8 @@ aside: false
 </div>
 
 <div class="academic-row academic-secondary">
-  <div>Computer Science & Technology</div>
-  <div>Master</div>
+  <div>Master in Computer Science & Technology</div>
+  <div>Hangzhou, Zhejiang</div>
 </div>
 
 <br/>
@@ -32,8 +32,8 @@ aside: false
 </div>
 
 <div class="academic-row academic-secondary">
-  <div>Information and Computing Science</div>
-  <div>Bachelor</div>
+  <div>Bachelor in Information and Computing Science</div>
+  <div>Wuhan, Hubei</div>
 </div>
 
 <span class="h3color">Work Experience</span>
