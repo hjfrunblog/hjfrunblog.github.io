@@ -56,7 +56,7 @@ Participated in the development of the front-end research and development of Edd
 
 <div class="job-record">
   <div class="job-company">PPTV</div>
-  <div class="job-title">Senior iOS Engineer</div>
+  <div class="job-title">iOS Engineer</div>
   <div class="time-span job-time-span">2015.4 ～ 2018.2</div>
 </div>
 
