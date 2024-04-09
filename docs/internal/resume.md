@@ -73,7 +73,7 @@ Mainly participated in the development iteration and maintenance of the iOS vers
 
 The client is an internationally renowned comprehensive container logistics giant. Its core business covers everything from warehousing to logistics. The project was to upgrade an in-house scanning application for its warehouse department. There is an Android phone version and an RF gun version. Use a hybrid architecture. Parts that need to call the device's native capabilities are implemented using **Android** native, such as taking pictures, scanning, etc. Other pages and functions are implemented using Vue. The project supports Android 9 (API 28) and later systems, and the scanner supports two devices each of **Zebra** and **Honeywell**. The main functions include login, profile management, data management, pallet management, online scanning, offline scanning, multi-language, scanner shortcut key adaptation, etc. The technologies and languages used in the project mainly include Java, **Vue**, **Docker**, **SQL Server**, **NestJS**, etc. The project has been successfully launched and is running in warehouses in many countries and regions, such as Shanghai, Ningbo, India, Vietnam, etc.
 
-I am mainly responsible for the development of modules such as Profile management, data management, homepage, multi-language, instructions for use, etc., and adapting scanner shortcut keys.
+I am mainly responsible for the development of modules such as profile management, data management, homepage, multi-language, user manual, etc., and adapting scanner shortcut keys.
 
 <div class="project-record">
   <div>Social Listening Asset</div>
@@ -82,10 +82,10 @@ I am mainly responsible for the development of modules such as Profile managemen
 
 This project is to create a universal Social Listening platform. It is convenient for different consultants to conduct visual data analysis on more industries to obtain valuable business insights. Provides multiple data sources. Data can be uploaded by users in a format that conforms to the format, or data can be scraped through Twitter or other data source APIs. The service is deployed on Azure.
 
-In this project, I am mainly responsible for the development of the Web front-end part, and also participated in optimizing the sentiment analysis model of the content. And focused on participating in subsequent devops. The project uses Google Signin to manage user permission verification.
+In this project, I am mainly responsible for the development of the Web front-end part, and also participated in optimizing the sentiment analysis model of the content. And focused on participating in subsequent devops. The project uses **Google Signin** to manage user permission verification.
 
 Later, I independently completed the supporting **Internal Management Platform**, which is a complete full-stack project. It is very convenient to provide some functions that were previously troublesome and dangerous operations (previously you had to log in to the backend to directly modify the data in the database), such as user management and data set management. It can also be easily exported to the user's local area. And it is adapted to the mobile phone screen so that admin users can use their mobile phones to handle it at any time.
-There is complete user authentication, using JWT. Other technologies used mainly include MongoDB, ExpressJS, Vue and NodeJS, using Vuetify's UI library. The project is deployed on Alibaba Cloud and Azure.
+There is complete user authentication, using **JWT**. Other technologies used mainly include **MongoDB**, **ExpressJS**, **Vue** and **NodeJS**, powered UI library named Vuetify. The project is deployed on Alibaba Cloud and Azure.
 
 <div class="project-record">
   <div><a href="https://climateactionnavigator.oliverwymanforum.com">Climate Action Navigator</a></div>
@@ -94,7 +94,7 @@ There is complete user authentication, using JWT. Other technologies used mainly
 
 The project will help senior leaders explore the actions needed to reduce carbon emissions by half by 2030 to avoid the most serious permanent effects of climate change. Based on scientifically supported viewpoints and insights, the project provides comprehensive information on decarbonization pathways in a one-stop shop.
 
-My main responsibility in this project is the development of the front-end Web app. Based on the Vue framework. Combined with D3js, a large number of rich charts are drawn. The data obtained from the background is displayed using charts and a series of interactive operations are carried out. Some of the back- end APIs of this project use a CMS named Strapi.
+My main responsibility in this project is the development of the front-end Web app. Based on the **Vue** framework. Combined with **D3js**, a large number of rich charts are drawn. The data obtained from the background is displayed using charts and a series of interactive operations are carried out. Some of the back- end APIs of this project use a CMS named **Strapi**.
 
 <div class="project-record">
   <div>Digital insights Creation Engine（DICE）</div>
@@ -111,9 +111,9 @@ My task is to create a Web app based on the Vue framework to facilitate customer
   <div class="time-span">2019.2 ~ 2019.9</div>
 </div>
 
-Created Cyber Dashboard for a large bank customer in Thailand. Track the risk incidents such as cyber attacks and phishing suffered by various departments of the bank and customers. Keep track of cyber security trends. The report can be automatically updated according to the newly generated data every month and every quarter, assisting the bank to take targeted measures
+Created Cyber Dashboard for a large bank customer in Thailand. Track the risk incidents such as cyber attacks and phishing suffered by various departments of the bank and customers. Keep track of cyber security trends. The report can be automatically updated according to the newly generated data every month and every quarter, assisting the bank to take targeted measures.
 
-As the main R&D engineer, I participate in sorting out the main data flow of this business. Help customers use the data generated by Data Stage. Import into Qlik Sense to produce a large number of rich reports. And in order to meet the individual needs of customers, a large number of custom extensions were rewritten to complete the perfect delivery of the project. The technologies used mainly include JQuery and D3js.
+As the main R&D engineer, I participate in sorting out the main data flow of this business. Help customers use the data generated by Data Stage. Import into **Qlik Sense** to produce a large number of rich reports. And in order to meet the individual needs of customers, a large number of custom extensions were rewritten to complete the perfect delivery of the project. The technologies used mainly include JQuery and **D3js**.
 
 <span class="h3color">Qualifications</span>
 
@@ -129,10 +129,10 @@ As the main R&D engineer, I participate in sorting out the main data flow of thi
 
 <span class="h3color">Personal advantage</span>
 
-1. Rich full-stack work experience, capable of fulfilling multiple roles, and open minded to different technology stack.
+1. Rich full-stack work experience, capable of fulfilling multiple roles, and open minded to different technology stacks.
 2. Many years of working experience in foreign companies, as well as overseas work experience, and the ability to communicate in basic oral English.
 3. Able to read English documents easily, conduct written technical communication fluently in English, and watch videos of foreign technical speeches without subtitles.
-4. Rich experience in data visualization work
+4. Rich experience in data visualization.
 5. Strong research ability, good at using documents and Google, YouTube, GitHub, etc.
 
 <style>
