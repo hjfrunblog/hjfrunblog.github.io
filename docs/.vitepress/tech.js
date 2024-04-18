@@ -39,6 +39,10 @@ export function sidebarTech() {
         {
           text: 'Vue 和 React 的异同',
           link: 'vue-react'
+        },
+        {
+          text: 'Vue 和 React 中的 diff 算法',
+          link: 'vue-diff'
         }
       ]
     },
