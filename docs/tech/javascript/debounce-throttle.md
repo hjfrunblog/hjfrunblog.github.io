@@ -1,3 +1,7 @@
+---
+lastUpdated: 2024-04-02T00:47:46+0800
+---
+
 # Debounce 和 Throttle
 
 **防抖**（**Debounce**）和**节流**（**Throttle**）的共同点都是为来降低频率; 防抖不在意过程, 在一段时间内, 只有最后一次产生效果. 节流在意过程
@@ -28,7 +32,9 @@ function debounce(cb, delay = 1000) {
 
 ## 节流实现方式
 
-```js:line-numbers
+::: code-group
+
+```js [Solution 1]:line-numbers
 function throttle(cb, delay = 1000) {
   let timer
   return (...args) => {
@@ -39,8 +45,9 @@ function throttle(cb, delay = 1000) {
     }, delay)
   }
 }
+```
 
-// or
+```js [Solution 2]:line-numbers
 function throttle(func, timeout = 500) {
   let shouldWait = false
   return (...args) => {
@@ -53,3 +60,5 @@ function throttle(func, timeout = 500) {
   }
 }
 ```
+
+:::
