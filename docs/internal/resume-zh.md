@@ -117,7 +117,7 @@ aside: false
 2. 擅长前端开发。主要基于当前流行的 Vue 框架，也有一定的 React 经验。使用 Cypress 进行自动化测试
 3. 熟练掌握后端 Restful API 开发，主要是基于 NodeJS、ExpressJS、NestJS 等其他相关技术
 4. 熟练掌握 Docker 相关的容器技术，熟悉云原生相关的一些技术，如 Kubernetes，Serverless 等
-5. 熟练掌握数据库开发，如 MongoDB，MYSQL，SQL Server，SQLite，indexedDB 等
+5. 熟练掌握数据库开发，如 MongoDB，MYSQL，SQL Server，SQLite，Redis，indexedDB 等
 6. 熟悉常用的 CI/CD 流程及工具，如 GitHub Actions 及 Jenkins
 7. 熟悉 Data Scraping，Data Analysis 以及 Data Visualization 等
 8. 熟悉常见的 BI 工具，如 Qlik Sense，Microsoft Power BI。不仅能熟练使用，还能结合项目需要编写拓展的可视化组件
