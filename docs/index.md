@@ -19,3 +19,13 @@ hero:
 #   - title: Feature B
 #     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
+
+致敬新的开始
+<a :class="$style.interview" href="https://www.hjfrun.com/interview/" target="_blank" rel="noreferrer">🫡</a>👍
+
+<style module>
+.interview {
+  text-decoration: none !important;
+}
+
+</style>
