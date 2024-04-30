@@ -75,6 +75,11 @@ export function sidebarTech() {
       text: 'Redis 学习笔记',
       base: '/tech/',
       link: 'learn-redis'
+    },
+    {
+      text: 'Kafka 概览',
+      base: '/tech/',
+      link: 'kafka-overview'
     }
   ]
 }
