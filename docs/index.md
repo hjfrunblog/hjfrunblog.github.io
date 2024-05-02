@@ -8,10 +8,10 @@ hero:
   tagline: 天予不取，反受其咎；时至不行，反受其殃
   actions:
     - theme: brand
-      text: 学点技术
+      text: 技术
       link: /tech/javascript/map-filter-reduce
     - theme: alt
-      text: 分享生活
+      text: 生活
       link: /life/first-meet-su7
 # features:
 #   - title: Feature A
@@ -21,7 +21,7 @@ hero:
 ---
 
 致敬新的开始
-<a :class="$style.interview" href="https://www.hjfrun.com/interview/" target="_blank" rel="noreferrer">🫡</a>👍
+<a :class="$style.interview" href="https://www.hjfrun.com/interview/" target="_blank" rel="noreferrer">🫡🫡🫡</a>👍
 
 <style module>
 .interview {
