@@ -58,6 +58,10 @@ export function sidebarTech() {
         {
           text: '一些正则表达式',
           link: 'regex'
+        },
+        {
+          text: '一些Git命令',
+          link: 'git-command'
         }
       ]
     },
