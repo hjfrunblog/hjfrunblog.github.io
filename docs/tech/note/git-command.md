@@ -82,3 +82,4 @@
 - git stash apply <储藏的名称> 取出储藏中对应的工作状态进行恢复，不会删除储藏
 - git stash clear 清空所有储藏中的工作
 - git stash drop <储藏的名称> 删除对应的某个储藏
+- git stash show [-p] 查看最新 stash 和当前差异
