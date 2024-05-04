@@ -47,6 +47,10 @@ export function sidebarTech() {
         {
           text: 'Vue 和 React 中的 diff 算法',
           link: 'vue-diff'
+        },
+        {
+          text: 'MVVM 和 MVC',
+          link: 'mvvm'
         }
       ]
     },
