@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 技术
-      link: /tech/javascript/map-filter-reduce
+      link: /javascript/map-filter-reduce
     - theme: alt
       text: 生活
       link: /life/first-meet-su7

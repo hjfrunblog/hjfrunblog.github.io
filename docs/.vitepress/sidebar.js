@@ -1,8 +1,8 @@
-export function sidebarTech() {
+export function sidebar() {
   return [
     {
       text: 'JavaScript',
-      base: '/tech/javascript/',
+      base: '/javascript/',
       collapsed: false,
       items: [
         {
@@ -25,7 +25,7 @@ export function sidebarTech() {
     },
     {
       text: 'Vue',
-      base: '/tech/vue/',
+      base: '/vue/',
       collapsed: false,
       items: [
         {
@@ -55,8 +55,18 @@ export function sidebarTech() {
       ]
     },
     {
+      text: 'Web3',
+      base: '/web3/',
+      items: [
+        {
+          text: '概览',
+          link: 'overview'
+        }
+      ]
+    },
+    {
       text: '烂笔头',
-      base: '/tech/note/',
+      base: '/note/',
       collapsed: false,
       items: [
         {
@@ -70,28 +80,24 @@ export function sidebarTech() {
         {
           text: '一些Git命令',
           link: 'git-command'
+        },
+        {
+          text: 'JWT (JSON Web Token)',
+          link: 'jwt'
+        },
+        {
+          text: '浏览器直接爬取数据',
+          link: 'browser-crawler'
+        },
+        {
+          text: 'Redis 学习笔记',
+          link: 'learn-redis'
+        },
+        {
+          text: 'Kafka 概览',
+          link: 'kafka-overview'
         }
       ]
-    },
-    {
-      text: 'JWT (JSON Web Token)',
-      base: '/tech/',
-      link: 'jwt'
-    },
-    {
-      text: '浏览器直接爬取数据',
-      base: '/tech/',
-      link: 'browser-crawler'
-    },
-    {
-      text: 'Redis 学习笔记',
-      base: '/tech/',
-      link: 'learn-redis'
-    },
-    {
-      text: 'Kafka 概览',
-      base: '/tech/',
-      link: 'kafka-overview'
     }
   ]
 }

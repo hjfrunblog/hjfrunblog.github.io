@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { sidebarTech } from './tech'
+import { sidebar } from './sidebar'
 import { sidebarLife } from './life'
 
 // https://vitepress.dev/reference/site-config
@@ -48,7 +48,7 @@ export default defineConfig({
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式',
     sidebar: {
-      '/tech/': { base: '/tech/', items: sidebarTech() },
+      '/': { base: '/', items: sidebar() },
       '/life/': { base: '/life/', items: sidebarLife() }
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/hjfrun' }]
@@ -63,8 +63,8 @@ function nav() {
     { text: '主页', link: '/' },
     {
       text: '技术',
-      link: '/tech/javascript/map-filter-reduce',
-      activeMatch: '/tech/'
+      link: '/javascript/map-filter-reduce',
+      activeMatch: '/(javascript|vue|web3|note)/'
     },
     {
       text: '生活',

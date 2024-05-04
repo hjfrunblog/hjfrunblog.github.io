@@ -1,4 +1,5 @@
 ---
+sidebar: false
 footer: false
 ---
 

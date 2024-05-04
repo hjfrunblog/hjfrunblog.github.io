@@ -1,6 +1,7 @@
 ---
 footer: false
 navbar: false
+sidebar: false
 lastUpdated: false
 ---
 
