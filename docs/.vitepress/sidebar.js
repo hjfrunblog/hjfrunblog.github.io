@@ -65,6 +65,10 @@ export function sidebar() {
         {
           text: '密码学基础',
           link: 'crypto'
+        },
+        {
+          text: '以太坊',
+          link: 'ethereum'
         }
       ]
     },
