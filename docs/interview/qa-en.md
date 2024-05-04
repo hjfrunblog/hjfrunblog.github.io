@@ -3,6 +3,8 @@ footer: false
 navbar: false
 sidebar: false
 lastUpdated: false
+prev: false
+next: false
 ---
 
 # FAQ in interview

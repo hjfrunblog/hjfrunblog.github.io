@@ -4,6 +4,9 @@ footer: false
 navbar: false
 lastUpdated: false
 aside: false
+prev: false
+next: false
+sidebar: false
 ---
 
 <div class="genius-name">贺剑峰</div>
