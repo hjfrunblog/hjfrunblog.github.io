@@ -16,6 +16,10 @@ export function sidebarTech() {
         {
           text: 'call、apply、bind',
           link: 'call-apply-bind'
+        },
+        {
+          text: 'JavaScript 反直觉',
+          link: 'js-trick'
         }
       ]
     },
