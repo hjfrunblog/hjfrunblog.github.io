@@ -19,3 +19,7 @@ lastUpdated: false
 ## JavaScript Coding
 
 - [Coding](./quick-js-coding)
+
+## JD
+
+- [Job Description](./ba-jd)
