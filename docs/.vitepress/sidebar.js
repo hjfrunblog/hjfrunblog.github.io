@@ -73,6 +73,10 @@ export function sidebar() {
         {
           text: 'DeFi 去中心化金融',
           link: 'defi'
+        },
+        {
+          text: 'Web3 应用',
+          link: 'web3-app'
         }
       ]
     },
