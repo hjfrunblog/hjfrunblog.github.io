@@ -69,6 +69,10 @@ export function sidebar() {
         {
           text: '以太坊',
           link: 'ethereum'
+        },
+        {
+          text: 'DeFi 去中心化金融',
+          link: 'defi'
         }
       ]
     },
