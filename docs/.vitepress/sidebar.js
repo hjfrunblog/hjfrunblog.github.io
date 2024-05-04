@@ -59,8 +59,12 @@ export function sidebar() {
       base: '/web3/',
       items: [
         {
-          text: '概览',
+          text: 'web3概览',
           link: 'overview'
+        },
+        {
+          text: '密码学基础',
+          link: 'crypto'
         }
       ]
     },

@@ -9,9 +9,10 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' }]
   ],
   cleanUrls: true,
-  // markdown: {
-  //   lineNumbers: true
-  // },
+  markdown: {
+    math: true
+    // lineNumbers: true
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
