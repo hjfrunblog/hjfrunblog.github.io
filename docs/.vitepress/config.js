@@ -48,8 +48,11 @@ export default defineConfig({
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式',
     sidebar: {
-      '/': { base: '/', items: sidebar() },
-      '/life/': { base: '/life/', items: sidebarLife() }
+      '/javascript': { base: '/', items: sidebar() },
+      '/vue': { base: '/', items: sidebar() },
+      '/web3': { base: '/', items: sidebar() },
+      '/note': { base: '/', items: sidebar() },
+      '/life/': { base: '/life', items: sidebarLife() }
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/hjfrun' }]
   },
