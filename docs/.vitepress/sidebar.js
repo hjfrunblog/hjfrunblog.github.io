@@ -57,6 +57,7 @@ export function sidebar() {
     {
       text: 'Web3',
       base: '/web3/',
+      collapsed: true,
       items: [
         {
           text: 'web3概览',
