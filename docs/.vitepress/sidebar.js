@@ -57,7 +57,7 @@ export function sidebar() {
     {
       text: 'Web3',
       base: '/web3/',
-      collapsed: true,
+      collapsed: false,
       items: [
         {
           text: 'web3概览',
@@ -78,6 +78,10 @@ export function sidebar() {
         {
           text: 'Web3 应用',
           link: 'web3-app'
+        },
+        {
+          text: 'Solidity',
+          link: 'solidity'
         }
       ]
     },
