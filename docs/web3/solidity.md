@@ -66,3 +66,20 @@ contract SimpleStorage {
 
 }
 ```
+
+- calldata: 不能被修改的临时变量
+- memory：临时变量，用完销毁
+- storage：默认
+
+## mapping
+
+```solidity
+mapping(string => uint256) public nameToFav;
+
+function addPerson(string memory _name, uint256 _favNumber) public {
+        // people.push(People(_name, _favNumber));
+        People memory newPerson = People({name: _name, favNumber: _favNumber});
+        people.push(newPerson);
+        nameToFav[_name] = _favNumber;
+    }
+```
