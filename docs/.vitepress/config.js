@@ -13,6 +13,7 @@ export default defineConfig({
     math: true
     // lineNumbers: true
   },
+  lastUpdated: false, // disable all lastUpdated currently
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
