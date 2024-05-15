@@ -56,16 +56,19 @@ scrape_configs:
 2. Instant Vector: `http_server_requests_seconds_count`
 3. Range Vector: `http_server_requests_seconds_count[5m]`
 
-### 4 Types of Metrics
+### 4 种类型 Metrics
+
+在 Prometheus 监控中，对于采集过来的数据，统一称为 metrics 数据。
 
 1. Counter
-   单增
+   - 单增，从数据量 0 开始累积计算，理想状态下，只能是永远增长，不会降低。
 2. Gauge
-   能增能减
+   - 能增能减，瞬时状态，数值。随着时间的推移，不断的产生瞬时，没有规则的变化的。
 3. Histogram
+   - Histogram 统计数据的分布情况。比如最小值，最大值，中间值，还有中位数，75 百分位，90 百分位，95 百分位，99 百分位等。这是一种特殊的 metrics 数据类型，代表一种近似的百分比估算数值。
 4. Summary
 
-### 4 Golden Metrics
+### 4 种黄金 Metrics
 
 1. Traffic: Rate
    `sum(rate(http_request_duration_seconds_count{}[10m]))`
