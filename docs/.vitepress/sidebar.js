@@ -86,10 +86,22 @@ export function sidebar() {
       ]
     },
     {
-      text: '烂笔头',
+      text: '杂七杂八',
       base: '/note/',
       collapsed: false,
       items: [
+        {
+          text: 'Grafana 学习笔记',
+          link: 'grafana'
+        },
+        {
+          text: 'Prometheus',
+          link: 'prometheus'
+        },
+        {
+          text: 'Kafka 概览',
+          link: 'kafka-overview'
+        },
         {
           text: '一些Shell脚本',
           link: 'shell'
@@ -113,10 +125,6 @@ export function sidebar() {
         {
           text: 'Redis 学习笔记',
           link: 'learn-redis'
-        },
-        {
-          text: 'Kafka 概览',
-          link: 'kafka-overview'
         }
       ]
     }
