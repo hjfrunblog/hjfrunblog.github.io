@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { sidebar } from './sidebar'
+import { web3Sidebar } from './web3Sidebar'
 import { sidebarLife } from './life'
 
 // https://vitepress.dev/reference/site-config
@@ -13,7 +14,7 @@ export default defineConfig({
     math: true
     // lineNumbers: true
   },
-  lastUpdated: false, // disable all lastUpdated currently
+  // lastUpdated: false, // disable all lastUpdated currently
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
@@ -50,11 +51,11 @@ export default defineConfig({
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式',
     sidebar: {
-      '/javascript': { base: '/', items: sidebar() },
-      '/vue': { base: '/', items: sidebar() },
-      '/web3': { base: '/', items: sidebar() },
-      '/note': { base: '/', items: sidebar() },
-      '/life/': { base: '/life', items: sidebarLife() }
+      '/javascript': { items: sidebar() },
+      '/vue': { items: sidebar() },
+      '/web3': { items: web3Sidebar() },
+      '/note': { items: sidebar() },
+      '/life/': { items: sidebarLife() }
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/hjfrun' }]
   },
@@ -65,11 +66,15 @@ export default defineConfig({
 
 function nav() {
   return [
-    { text: '主页', link: '/' },
     {
       text: '技术',
       link: '/javascript/map-filter-reduce',
       activeMatch: '/(javascript|vue|web3|note)/'
+    },
+    {
+      text: 'Web3',
+      link: '/web3/overview',
+      activeMatch: '/web3/'
     },
     {
       text: '生活',
