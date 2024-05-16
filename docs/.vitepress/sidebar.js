@@ -99,6 +99,10 @@ export function sidebar() {
           link: 'prometheus'
         },
         {
+          text: 'Loki',
+          link: 'loki'
+        },
+        {
           text: 'Kafka 概览',
           link: 'kafka-overview'
         },
