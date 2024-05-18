@@ -46,7 +46,7 @@ export default defineConfig({
       next: '下一页'
     },
     returnToTopLabel: '回到顶部',
-    sidebarMenuLabel: '菜单',
+    sidebarMenuLabel: '目录',
     darkModeSwitchLabel: '主题',
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式',
@@ -69,7 +69,7 @@ function nav() {
     {
       text: '技术',
       link: '/javascript/map-filter-reduce',
-      activeMatch: '/(javascript|vue|web3|note)/'
+      activeMatch: '/(javascript|vue|note)/'
     },
     {
       text: 'Web3',
