@@ -36,10 +36,10 @@ export default defineConfig({
       }
     },
 
-    footer: {
-      message: '沪ICP备 <strong>2020025326</strong> 号',
-      copyright: `版权所有 © 2024 hjfrun`
-    },
+    // footer: {
+    //   message: '沪ICP备 <strong>2020025326</strong> 号',
+    //   copyright: `版权所有 © 2024 hjfrun`
+    // },
 
     docFooter: {
       prev: '上一页',
