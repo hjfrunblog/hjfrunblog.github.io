@@ -1,6 +1,14 @@
 # 一些 shell 脚本
 
-## 递归删除所有.DS_Store
+## 零散命令
+
+### 查看上一条命令执行状态码
+
+```shell
+echo $?
+```
+
+### 递归删除所有.DS_Store
 
 ```shell
 find . -name '.DS_Store' -type f -delete
