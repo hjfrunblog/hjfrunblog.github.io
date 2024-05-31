@@ -2,6 +2,20 @@
 
 ## 零散命令
 
+### Docker copy
+
+- Copy a local file into container
+
+```sh
+docker cp ./some_file CONTAINER:/work
+```
+
+- Copy files from container to local path
+
+```sh
+ docker cp CONTAINER:/var/logs/ /tmp/app_logs
+```
+
 ### 查看上一条命令执行状态码
 
 ```shell
