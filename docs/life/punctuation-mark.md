@@ -1,0 +1,29 @@
+# 英文标点符号及读法
+
+- `.` : Period(US), Full Stop(UK), Dot
+- `,` : Comma
+- `?` : Question Mark
+- `!` : Exclamation Mark(US), Exclamation Point(UK)
+- `:` : Colon
+- `;` : Semicolon
+- `-` : Hyphen
+- `--` : Dash
+- `/` : (Forward) Slash, Virgule
+- `\` : Backslash
+- `|` : Vertical Bar, Pipe
+- `_` : Underscore, Underline
+- `->` : Arrow
+- `*` : Asterisk, Star
+- `#` : Hash Key(UK), Pound Key(US), Number Sign, Hash Tag
+- `'` : Apostrophe, Single Quote
+- `"` : Quotation Mark, Double Quote
+- `()` : Parentheses(US), Round Brackets(UK)
+- `[]` : Brackets(US), Square Brackets
+- `{}` : Curly Brackets(US), Braces(UK)
+- `<>` : Angle Brackets
+- `...` : Ellipsis
+- `~` : Tilde, Swung Dash
+- `&` : Ampersand
+- `@` : At Sign
+- `^` : Caret
+- `%` : Percent Sign
