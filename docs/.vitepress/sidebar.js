@@ -20,6 +20,10 @@ export function sidebar() {
         {
           text: 'JavaScript 反直觉',
           link: 'js-trick'
+        },
+        {
+          text: '深拷贝',
+          link: 'deep-clone'
         }
       ]
     },
