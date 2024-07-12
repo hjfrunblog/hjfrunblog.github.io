@@ -28,6 +28,10 @@ export function sidebar() {
         {
           text: 'Proxy-Reflect 和响应式原理',
           link: 'proxy-reflect-reactive'
+        },
+        {
+          text: 'JavaScript 面向对象',
+          link: 'js-oop'
         }
       ]
     },
