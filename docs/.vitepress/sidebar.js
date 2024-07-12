@@ -6,7 +6,7 @@ export function sidebar() {
       collapsed: false,
       items: [
         {
-          text: 'map、filter、reduce',
+          text: 'JavaScript 高阶函数',
           link: 'map-filter-reduce'
         },
         {
