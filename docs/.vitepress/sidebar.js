@@ -36,6 +36,10 @@ export function sidebar() {
         {
           text: 'JavaScript 中的 this',
           link: 'this'
+        },
+        {
+          text: 'JavaScript 事件循环',
+          link: 'event-loop'
         }
       ]
     },
