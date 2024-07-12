@@ -19,7 +19,7 @@ export function sidebar() {
         },
         {
           text: 'JavaScript 反直觉',
-          link: 'js-trick'
+          link: 'trick'
         },
         {
           text: '深拷贝',
@@ -31,7 +31,11 @@ export function sidebar() {
         },
         {
           text: 'JavaScript 面向对象',
-          link: 'js-oop'
+          link: 'oop'
+        },
+        {
+          text: 'JavaScript 中的 this',
+          link: 'this'
         }
       ]
     },
