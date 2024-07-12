@@ -24,6 +24,10 @@ export function sidebar() {
         {
           text: '深拷贝',
           link: 'deep-clone'
+        },
+        {
+          text: 'Proxy-Reflect 和响应式原理',
+          link: 'proxy-reflect-reactive'
         }
       ]
     },
