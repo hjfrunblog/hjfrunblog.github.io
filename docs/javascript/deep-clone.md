@@ -18,7 +18,7 @@ JavaScript 深拷贝是指在复制对象时，不仅复制对象本身，还复
 
 ### 简单实现
 
-JSON.parse() 和 JSON.stringify()：
+`JSON.parse()` 和 `JSON.stringify()`：
 
 - 这是实现深拷贝的简单方法，但存在局限性；
 - 例如无法复制函数、循环引用等；
