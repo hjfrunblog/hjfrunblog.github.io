@@ -32,3 +32,10 @@ next: false
 ## Useful Links
 
 - [coderwhy 前端面试精讲](https://mp.weixin.qq.com/mp/appmsgalbum?search_click_id=7631180183693145541-1720617779074-3313732247&action=getalbum&album_id=1566035091556974596&__biz=Mzg5MDAzNzkwNA==#wechat_redirect)
+
+## AI Tools
+
+- [豆包](https://doubao.com){target="_blank"}
+- [讯飞星火](https://xinghuo.xfyun.cn/desk){target="_blank"}
+- [文心一言](https://yiyan.baidu.com/){target="_blank"}
+- [通义千问](https://tongyi.aliyun.com/qianwen/){target="_blank"}
