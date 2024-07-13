@@ -6,7 +6,7 @@
 
 ```js
 const obj = {
-  name: 'why',
+  name: 'hjf',
   age: 18
 }
 
@@ -67,7 +67,7 @@ kobe
 
 ```js
 const obj = {
-  name: 'why',
+  name: 'hjf',
   age: 18
 }
 

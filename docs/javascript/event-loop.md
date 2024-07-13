@@ -11,7 +11,7 @@ Node 的事件循环是一个我们编写的 JavaScript 代码和系统调用（
 ## 浏览器事件循环
 
 ```js
-const name = 'coderwhy'
+const name = 'hjf'
 
 // 1.将该函数放入到调用栈中被执行
 console.log(name)
