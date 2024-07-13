@@ -39,3 +39,7 @@ next: false
 - [讯飞星火](https://xinghuo.xfyun.cn/desk){target="_blank"}
 - [文心一言](https://yiyan.baidu.com/){target="_blank"}
 - [通义千问](https://tongyi.aliyun.com/qianwen/){target="_blank"}
+
+## JavaScript
+
+- [JS Trick](./js-tricks)
