@@ -18,10 +18,12 @@ next: false
 
 - [常见问题](./qa)
 - [FAQ](./qa-en)
+- [Mock Interview](./mock-interview)
 
 ## JavaScript Coding
 
-- [Coding](./quick-js-coding)
+- [Quick Coding](./quick-js-coding)
+- [BST](./js-bst)
 
 ## JD
 
