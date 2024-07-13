@@ -67,6 +67,10 @@ export function sidebar() {
         {
           text: 'MVVM 和 MVC',
           link: 'mvvm'
+        },
+        {
+          text: 'Pinia 和 vuex',
+          link: 'pinia-vuex'
         }
       ]
     },
