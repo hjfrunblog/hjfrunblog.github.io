@@ -20,10 +20,11 @@ next: false
 - [FAQ](./qa-en){target="_blank"}
 - [Mock Interview](./mock-interview){target="_blank"}
 
-## JavaScript Coding
+## JavaScript
 
 - [Quick Coding](./quick-js-coding){target="_blank"}
 - [BST](./js-bst){target="_blank"}
+- [JS Trick](./js-tricks){target="_blank"}
 
 ## JD
 
@@ -39,7 +40,3 @@ next: false
 - [讯飞星火](https://xinghuo.xfyun.cn/desk){target="_blank"}
 - [文心一言](https://yiyan.baidu.com/){target="_blank"}
 - [通义千问](https://tongyi.aliyun.com/qianwen/){target="_blank"}
-
-## JavaScript
-
-- [JS Trick](./js-tricks)

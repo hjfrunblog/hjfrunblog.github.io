@@ -18,10 +18,6 @@ export function sidebar() {
           link: 'call-apply-bind'
         },
         {
-          text: 'JavaScript 反直觉',
-          link: 'trick'
-        },
-        {
           text: '深拷贝',
           link: 'deep-clone'
         },
