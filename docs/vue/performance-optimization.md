@@ -205,6 +205,23 @@ vue-virtual-scroll-grid
 </div>
 ```
 
+## 页面性能优化
+
+1. 资源压缩合并，减少HTTP请求
+2. 非核心代码异步加载->异步加载的方式->异步加载的区别
+   - 异步加载的方式：1、动态脚本加载；2、defer；3、async
+   - 异步加载的区别：1、defer是在HTML解析完以及同步js执行完之后才会执行，如果是多个，安装加载的顺序依次执行；2、async是在加载完成之后立即执行，如果是多个，执行顺序和加载顺序无关。
+3. 利用浏览器缓存->缓存的分类->缓存的原理
+   - 强缓存：Expires （Expires:Thu,21 Jan 2017 23：39：02） GMT；Cache-Control (Cache-Control:max-age=3600)
+   - 协商缓存：Last-Modified If-Modified-Since Etag If-None-Match (Last-Modified:Web,26 Jan 2017 00:35:11 GMT)
+   - Expires是绝对时间，取客户端电脑的时间来对比，可能不准确，而且可能被修改，Cache-Control是相对时间
+   - Last-Modified 与 If-Modified-Since的值相同，Last-Modified是服务器下发的时间，If-Modified-Since是客户端触发协商缓存，请求询问服务器带入的请求头中。这个方式的协商缓存有一个缺点，有可能文件改动了，但是内容没变，所有才有了Etag
+   - Etag是服务器下发的key值（Hash值），If-None-Match是客户端触发协商缓存，请求询问服务器key值(内容)有没有变化，是否可以使用缓存。
+4. 使用CDN（3~4个域名cdn，并行加载）
+5. 预解析DNS
+   - <meta http-equiv="x-dns-prefetch-control" content="on"> //强制打开dns预解析，a标签默认开启，但是https情况下是一般是关闭的
+   - <link ref="dns-prefetch" href="XXX">
+
 ## 其他优化
 
 - 扁平化 Store 数据结构，合理使用持久化 Store 数据
