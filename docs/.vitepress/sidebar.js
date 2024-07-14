@@ -36,6 +36,10 @@ export function sidebar() {
         {
           text: 'JavaScript 事件循环',
           link: 'event-loop'
+        },
+        {
+          text: 'webpack 优化',
+          link: 'webpack-optimization'
         }
       ]
     },

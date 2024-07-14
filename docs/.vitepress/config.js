@@ -28,13 +28,13 @@ export default defineConfig({
       label: '页面导航'
     },
 
-    lastUpdated: {
-      text: '最后更新于',
-      formatOptions: {
-        dateStyle: 'medium',
-        timeStyle: 'medium'
-      }
-    },
+    // lastUpdated: {
+    //   text: '最后更新于',
+    //   formatOptions: {
+    //     dateStyle: 'medium',
+    //     timeStyle: 'medium'
+    //   }
+    // },
 
     // footer: {
     //   message: '沪ICP备 <strong>2020025326</strong> 号',

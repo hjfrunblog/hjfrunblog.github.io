@@ -33,6 +33,7 @@ next: false
 ## Useful Links
 
 - [coderwhy 前端面试精讲](https://mp.weixin.qq.com/mp/appmsgalbum?search_click_id=7631180183693145541-1720617779074-3313732247&action=getalbum&album_id=1566035091556974596&__biz=Mzg5MDAzNzkwNA==#wechat_redirect)
+- [小墨鱼的面试笔记](https://cchroot.github.io/interview/)
 
 ## AI Tools
 
