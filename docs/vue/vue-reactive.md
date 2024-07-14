@@ -15,3 +15,19 @@ Vue3 采用 proxy 重写了响应式系统, 因为 proxy 可以对整个对象�
 - 可以监听删除属性
 
 正因为 defineProperty 自身的缺陷, 导致 Vue2 在实现响应式过程需要实现其他的方法辅助（如重写数组方法、增加额外 set、delete 方法）
+
+## Proxy 与 Object.defineProperty 的优劣对比 ?
+
+Proxy 的优势如下:
+
+- Proxy 可以直接监听对象而非属性
+- Proxy 可以直接监听数组的变化
+- Proxy 有多达 13 种拦截方法，不限于 apply、ownKeys、deleteProperty、has 等等是 Object.defineProperty 不具备的
+- Proxy 返回的是一个新对象,我们可以只操作新的对象达到目的，而 Object.defineProperty 只能遍历对象属性直接修改
+- Proxy 作为新标准将受到浏览器厂商重点持续的性能优化，也就是传说中的新标准的性能红利
+
+Object.defineProperty 的优势如下:
+
+- 兼容性好，支持到 IE9
+
+#

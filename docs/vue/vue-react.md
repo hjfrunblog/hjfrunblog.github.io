@@ -37,3 +37,22 @@ React 使用 JSX 书写
 - 易于测试
 - 非常适合创建移动应用程序
 - 生态系统规模大，成熟度高
+
+## redux与vuex的区别？
+
+vuex 的流向：
+
+- view——>commit——>mutations——>state变化——>view变化（同步操作）
+- view——>dispatch——>actions——>mutations——>state变化——>view变化（异步操作）
+
+redux 的流向：
+
+- view——>dispatch——>actions——>reducer——>state变化——>view变化（同步异步一样）
+
+不同点：
+
+1. vuex 以 mutations 函数取代 redux 中的 reducer，只需在对应的 mutation 函数里改变 state 即可。
+2. vuex 支中的 state 直接关联到组件实例上，当 state 变化时自动重新渲染，无需订阅重新渲染函数。redux 使用 store 对象存储整个应用的状态，状态变化时，从最顶层向下传递，每一级都会进行状态比较，从而达到更新。
+3. vuex 支持 action 异步处理，redux 中只支持同步处理，对于异步处理需要借助于 redux-thunk 和 redux-saga 实现。
+
+#

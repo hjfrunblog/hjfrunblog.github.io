@@ -46,8 +46,8 @@ export function sidebar() {
           link: 'event-loop'
         },
         {
-          text: 'webpack 优化',
-          link: 'webpack-optimization'
+          text: 'webpack 使用',
+          link: 'webpack'
         }
       ]
     },
@@ -63,6 +63,10 @@ export function sidebar() {
         {
           text: 'Vue 响应式',
           link: 'vue-reactive'
+        },
+        {
+          text: 'vue 进阶',
+          link: 'vue-advanced'
         },
         {
           text: 'Tree Shaking',
