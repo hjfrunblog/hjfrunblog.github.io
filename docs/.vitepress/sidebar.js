@@ -85,6 +85,10 @@ export function sidebar() {
           link: 'pinia-vuex'
         },
         {
+          text: '双向绑定',
+          link: 'two-way-binding'
+        },
+        {
           text: '性能优化',
           link: 'performance-optimization'
         }

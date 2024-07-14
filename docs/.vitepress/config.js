@@ -68,7 +68,7 @@ function nav() {
   return [
     {
       text: '技术',
-      link: '/javascript/map-filter-reduce',
+      link: '/javascript/basic',
       activeMatch: '/(javascript|vue|note)/'
     },
     {
