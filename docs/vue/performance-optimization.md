@@ -204,3 +204,16 @@ vue-virtual-scroll-grid
   <p>...more child nodes</p>
 </div>
 ```
+
+## 其他优化
+
+- 扁平化 Store 数据结构，合理使用持久化 Store 数据
+- 引入生产环境的 Vue 文件
+- 为 item 设置唯一 key 值
+- 减少 watch 的数据，watch 对象的时候使用对象字符串
+- 不要在模板里面写过多表达式
+- 尽量减少 data 中的数据，data 中的数据都会增加getter 和 setter，会收集对应的watcher
+- 不需要响应式的数据不要放到 data 中（可以用 Object.freeze() 冻结数据）
+- 对象层级不要过深，否则性能就会差
+- 如果需要使用 v-for 给每项元素绑定事件时使用事件代理
+- 单独添加的监听事件是不会移除的，需要手动移除事件的监听，以免造成内存泄漏
