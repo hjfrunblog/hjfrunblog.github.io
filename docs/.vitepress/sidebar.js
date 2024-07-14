@@ -6,6 +6,14 @@ export function sidebar() {
       collapsed: false,
       items: [
         {
+          text: 'JavaScript 基础',
+          link: 'basic'
+        },
+        {
+          text: 'JavaScript 进阶',
+          link: 'advanced'
+        },
+        {
           text: 'JavaScript 高阶函数',
           link: 'map-filter-reduce'
         },
