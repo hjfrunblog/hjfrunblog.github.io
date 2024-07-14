@@ -52,6 +52,10 @@ export function sidebar() {
         {
           text: 'Vite 使用',
           link: 'vite'
+        },
+        {
+          text: 'NodeJS 使用',
+          link: 'nodejs'
         }
       ]
     },
