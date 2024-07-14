@@ -103,6 +103,10 @@ export function sidebar() {
         {
           text: '性能优化',
           link: 'performance-optimization'
+        },
+        {
+          text: 'watch',
+          link: 'watch'
         }
       ]
     },
