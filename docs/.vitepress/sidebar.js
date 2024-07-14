@@ -48,6 +48,10 @@ export function sidebar() {
         {
           text: 'webpack 使用',
           link: 'webpack'
+        },
+        {
+          text: 'Vite 使用',
+          link: 'vite'
         }
       ]
     },
