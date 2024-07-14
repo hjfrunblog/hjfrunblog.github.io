@@ -71,6 +71,10 @@ export function sidebar() {
         {
           text: 'Pinia 和 vuex',
           link: 'pinia-vuex'
+        },
+        {
+          text: '性能优化',
+          link: 'performance-optimization'
         }
       ]
     },
