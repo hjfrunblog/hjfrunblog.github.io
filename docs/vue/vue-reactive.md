@@ -95,5 +95,3 @@ Proxy 的优势如下:
 Object.defineProperty 的优势如下:
 
 - 兼容性好，支持到 IE9
-
-#

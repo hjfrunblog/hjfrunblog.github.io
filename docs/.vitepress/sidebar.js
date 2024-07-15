@@ -87,6 +87,10 @@ export function sidebar() {
           link: 'vue-data-binding'
         },
         {
+          text: 'Vue3',
+          link: 'vue3'
+        },
+        {
           text: 'Vue 响应式',
           link: 'vue-reactive'
         },

@@ -33,11 +33,11 @@ const router = createRouter({
 
 ```js [webpack]
 const UserDetails = () =>
-  import(/* webpackChunkName: "group-user" */ "./UserDetails.vue");
+  import(/* webpackChunkName: "group-user" */ './UserDetails.vue')
 const UserDashboard = () =>
-  import(/* webpackChunkName: "group-user" */ "./UserDashboard.vue");
+  import(/* webpackChunkName: "group-user" */ './UserDashboard.vue')
 const UserProfileEdit = () =>
-  import(/* webpackChunkName: "group-user" */ "./UserProfileEdit.vue");
+  import(/* webpackChunkName: "group-user" */ './UserProfileEdit.vue')
 ```
 
 ```js [vite]
@@ -48,16 +48,16 @@ export default defineConfig({
       // https://rollupjs.org/guide/en/#outputmanualchunks
       output: {
         manualChunks: {
-          "group-user": [
-            "./src/UserDetails",
-            "./src/UserDashboard",
-            "./src/UserProfileEdit",
-          ],
-        },
-      },
-    },
-  },
-});
+          'group-user': [
+            './src/UserDetails',
+            './src/UserDashboard',
+            './src/UserProfileEdit'
+          ]
+        }
+      }
+    }
+  }
+})
 ```
 
 :::
@@ -110,10 +110,10 @@ export default defineConfig({
   export default {
     computed: {
       activeUsers: function () {
-        return this.users.filter((user) => user.isActive);
-      },
-    },
-  };
+        return this.users.filter(user => user.isActive)
+      }
+    }
+  }
 </script>
 ```
 
@@ -131,12 +131,12 @@ export default defineConfig({
 像 `element-plus` 这样的第三方组件库可以按需引入避免体积太大
 
 ```js
-import { createApp } from "vue";
-import { Button, Select } from "element-plus";
+import { createApp } from 'vue'
+import { Button, Select } from 'element-plus'
 
-const app = createApp();
-app.use(Button);
-app.use(Select);
+const app = createApp()
+app.use(Button)
+app.use(Select)
 ```
 
 ## 事件的销毁
@@ -146,12 +146,12 @@ Vue 组件销毁时，会自动解绑它的全部指令及事件监听器，但�
 ```js
 export default {
   created() {
-    this.timer = setInterval(this.refresh, 2000);
+    this.timer = setInterval(this.refresh, 2000)
   },
   beforeUnmount() {
-    clearInterval(this.timer);
-  },
-};
+    clearInterval(this.timer)
+  }
+}
 ```
 
 ## 服务端渲染/静态网站生成：SSR/SSG
@@ -196,7 +196,7 @@ vue-virtual-scroll-grid
 </ul>
 ```
 
-按条件跳过更新时使用v-momo：下面这个列表只会更新选中状态变化项
+按条件跳过更新时使用 v-momo：下面这个列表只会更新选中状态变化项
 
 ```html
 <div v-for="item in list" :key="item.id" v-memo="[item.id === selected]">
@@ -207,18 +207,18 @@ vue-virtual-scroll-grid
 
 ## 页面性能优化
 
-1. 资源压缩合并，减少HTTP请求
+1. 资源压缩合并，减少 HTTP 请求
 2. 非核心代码异步加载->异步加载的方式->异步加载的区别
    - 异步加载的方式：1、动态脚本加载；2、defer；3、async
-   - 异步加载的区别：1、defer是在HTML解析完以及同步js执行完之后才会执行，如果是多个，安装加载的顺序依次执行；2、async是在加载完成之后立即执行，如果是多个，执行顺序和加载顺序无关。
+   - 异步加载的区别：1、defer 是在 HTML 解析完以及同步 js 执行完之后才会执行，如果是多个，安装加载的顺序依次执行；2、async 是在加载完成之后立即执行，如果是多个，执行顺序和加载顺序无关。
 3. 利用浏览器缓存->缓存的分类->缓存的原理
    - 强缓存：Expires （Expires:Thu,21 Jan 2017 23：39：02） GMT；Cache-Control (Cache-Control:max-age=3600)
    - 协商缓存：Last-Modified If-Modified-Since Etag If-None-Match (Last-Modified:Web,26 Jan 2017 00:35:11 GMT)
-   - Expires是绝对时间，取客户端电脑的时间来对比，可能不准确，而且可能被修改，Cache-Control是相对时间
-   - Last-Modified 与 If-Modified-Since的值相同，Last-Modified是服务器下发的时间，If-Modified-Since是客户端触发协商缓存，请求询问服务器带入的请求头中。这个方式的协商缓存有一个缺点，有可能文件改动了，但是内容没变，所有才有了Etag
-   - Etag是服务器下发的key值（Hash值），If-None-Match是客户端触发协商缓存，请求询问服务器key值(内容)有没有变化，是否可以使用缓存。
-4. 使用CDN（3~4个域名cdn，并行加载）
-5. 预解析DNS
+   - Expires 是绝对时间，取客户端电脑的时间来对比，可能不准确，而且可能被修改，Cache-Control 是相对时间
+   - Last-Modified 与 If-Modified-Since 的值相同，Last-Modified 是服务器下发的时间，If-Modified-Since 是客户端触发协商缓存，请求询问服务器带入的请求头中。这个方式的协商缓存有一个缺点，有可能文件改动了，但是内容没变，所有才有了 Etag
+   - Etag 是服务器下发的 key 值（Hash 值），If-None-Match 是客户端触发协商缓存，请求询问服务器 key 值(内容)有没有变化，是否可以使用缓存。
+4. 使用 CDN（3~4 个域名 cdn，并行加载）
+5. 预解析 DNS
    - <meta http-equiv="x-dns-prefetch-control" content="on"> //强制打开dns预解析，a标签默认开启，但是https情况下是一般是关闭的
    - <link ref="dns-prefetch" href="XXX">
 
@@ -229,8 +229,42 @@ vue-virtual-scroll-grid
 - 为 item 设置唯一 key 值
 - 减少 watch 的数据，watch 对象的时候使用对象字符串
 - 不要在模板里面写过多表达式
-- 尽量减少 data 中的数据，data 中的数据都会增加getter 和 setter，会收集对应的watcher
+- 尽量减少 data 中的数据，data 中的数据都会增加 getter 和 setter，会收集对应的 watcher
 - 不需要响应式的数据不要放到 data 中（可以用 Object.freeze() 冻结数据）
 - 对象层级不要过深，否则性能就会差
 - 如果需要使用 v-for 给每项元素绑定事件时使用事件代理
 - 单独添加的监听事件是不会移除的，需要手动移除事件的监听，以免造成内存泄漏
+
+### 编码阶段
+
+- 尽量减少 data 中的数据，data 中的数据都会增加 getter 和 setter，会收集对应的 watcher
+- v-if 和 v-for 不能连用
+- 如果需要使用 v-for 给每项元素绑定事件时使用事件代理
+- SPA 页面采用 keep-alive 缓存组件
+- 在更多的情况下，使用 v-if 替代 v-show
+- key 保证唯一
+- 使用路由懒加载、异步组件
+- 防抖、节流
+- 第三方模块按需导入
+- 长列表滚动到可视区域动态加载
+- 图片懒加载
+
+### SEO 优化
+
+- 预渲染
+- 服务端渲染 SSR
+
+### 打包优化
+
+- 压缩代码
+- Tree Shaking/Scope Hoisting
+- 使用 cdn 加载第三方模块
+- 多线程打包 happypack
+- splitChunks 抽离公共文件
+- sourceMap 优化
+
+### 用户体验
+
+- 骨架屏
+- PWA
+- 还可以使用缓存(客户端缓存、服务端缓存)优化、服务端开启 gzip 压缩等。
