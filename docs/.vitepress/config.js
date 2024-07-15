@@ -51,6 +51,7 @@ export default defineConfig({
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式',
     sidebar: {
+      '/frontend': { items: sidebar() },
       '/javascript': { items: sidebar() },
       '/vue': { items: sidebar() },
       '/web3': { items: web3Sidebar() },

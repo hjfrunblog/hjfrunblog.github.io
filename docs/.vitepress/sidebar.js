@@ -1,6 +1,20 @@
 export function sidebar() {
   return [
     {
+      text: '前端',
+      base: '/frontend/',
+      items: [
+        {
+          text: 'script 标签的 async 和 defer',
+          link: 'script-async-defer'
+        },
+        {
+          text: 'CSS 相关',
+          link: 'css'
+        }
+      ]
+    },
+    {
       text: 'JavaScript',
       base: '/javascript/',
       collapsed: false,
@@ -12,6 +26,10 @@ export function sidebar() {
         {
           text: 'JavaScript 进阶',
           link: 'advanced'
+        },
+        {
+          text: 'JavaScript 原型链',
+          link: 'prototype'
         },
         {
           text: 'JavaScript 高阶函数',
