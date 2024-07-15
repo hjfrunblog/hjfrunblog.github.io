@@ -1,6 +1,6 @@
 # script 标签的 async 和 defer
 
-![script](../tech/script-async-defer.png)
+![script](/tech/script-async-defer.png)
 
 在 HTML 中，script 标签的 `async` 和 `defer` 属性用于控制外部脚本的加载和执行方式。它们的主要区别如下：
 
