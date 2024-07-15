@@ -70,7 +70,7 @@ function nav() {
     {
       text: '技术',
       link: '/javascript/basic',
-      activeMatch: '/(javascript|vue|note)/'
+      activeMatch: '/(javascript|frontend|vue|note)/'
     },
     {
       text: 'Web3',
