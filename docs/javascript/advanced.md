@@ -6,13 +6,19 @@
 
 ```js [call]
 Function.prototype.myCall = function (context) {
+  // 判断调用对象
   if (typeof this !== 'function') {
     throw new TypeError('Error')
   }
+  // 判断 context 是否传入，如果未传入则设置为 window
   context = context || window
+  // 将调用函数设为对象的方法
   context.fn = this
+  // 获取参数
   const args = [...arguments].slice(1)
+  // 调用函数
   const result = context.fn(...args)
+  // 将属性删除
   delete context.fn
   return result
 }

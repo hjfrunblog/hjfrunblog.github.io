@@ -1,5 +1,14 @@
 # JS 基础知识点
 
+## 数据类型
+
+JavaScript 共有八种数据类型，分别是 Undefined、Null、Boolean、Number、String、Object、Symbol、BigInt。
+
+其中 Symbol 和 BigInt 是 ES6 中新增的数据类型：
+
+- Symbol 代表创建后独一无二且不可变的数据类型，它主要是为了解决可能出现的全局变量冲突的问题。
+- BigInt 是一种数字类型的数据，它可以表示任意精度格式的整数，使用 BigInt 可以安全地存储和操作大整数，即使这个数已经超出了 Number 能够表示的安全整数范围。
+
 ## 判断类型
 
 JS 检测数据类型的 4 种方式：
@@ -34,6 +43,97 @@ JS 检测数据类型的 4 种方式：
 - 缺点：使用起来相对繁琐，需要调用特定的方法。
 
 其中最通用的办法是运用 Object.prototype.toString.call()
+
+## Map 和 WeakMap
+
+### Map
+
+map 本质上就是键值对的集合，但是普通的 Object 中的键值对中的键只能是字符串。而 ES6 提供的 Map 数据结构类似于对象，但是它的键不限制范围，可以是任意类型，是一种更加完善的 Hash 结构。如果 Map 的键是一个原始数据类型，只要两个键严格相同，就视为是同一个键。
+实际上 Map 是一个数组，它的每一个数据也都是一个数组，其形式如下：
+
+```js
+const map = [
+  ['name', '张三'],
+  ['age', 18]
+]
+```
+
+Map 结构原生提供是三个遍历器生成函数和一个遍历方法
+
+- keys()：返回键名的遍历器。
+- values()：返回键值的遍历器。
+- entries()：返回所有成员的遍历器。
+- forEach()：遍历 Map 的所有成员。
+
+```js
+const map = new Map([
+  ['foo', 1],
+  ['bar', 2]
+])
+for (let key of map.keys()) {
+  console.log(key) // foo bar
+}
+for (let value of map.values()) {
+  console.log(value) // 1 2
+}
+for (let items of map.entries()) {
+  console.log(items) // ["foo",1]  ["bar",2]
+}
+map.forEach((value, key, map) => {
+  console.log(key, value) // foo 1    bar 2
+})
+```
+
+### WeakMap
+
+WeakMap 对象也是一组键值对的集合，其中的键是弱引用的。其键必须是对象，原始数据类型不能作为 key 值，而值可以是任意的。
+该对象也有以下几种方法：
+
+- set(key,value)：设置键名 key 对应的键值 value，然后返回整个 Map 结构，如果 key 已经有值，则键值会被更新，否则就新生成该键。（因为返回的是当前 Map 对象，所以可以链式调用）
+- get(key)：该方法读取 key 对应的键值，如果找不到 key，返回 undefined。
+- has(key)：该方法返回一个布尔值，表示某个键是否在当前 Map 对象中。
+- delete(key)：该方法删除某个键，返回 true，如果删除失败，返回 false。
+  其 clear()方法已经被弃用，所以可以通过创建一个空的 WeakMap 并替换原对象来实现清除。
+
+WeakMap 的设计目的在于，有时想在某个对象上面存放一些数据，但是这会形成对于这个对象的引用。一旦不再需要这两个对象，就必须手动删除这个引用，否则垃圾回收机制就不会释放对象占用的内存。
+
+而 WeakMap 的键名所引用的对象都是弱引用，即垃圾回收机制不将该引用考虑在内。因此，只要所引用的对象的其他引用都被清除，垃圾回收机制就会释放该对象所占用的内存。也就是说，一旦不再需要，WeakMap 里面的键名对象和所对应的键值对会自动消失，不用手动删除引用。
+
+总结：
+
+- Map 数据结构。它类似于对象，也是键值对的集合，但是“键”的范围不限于字符串，各种类型的值（包括对象）都可以当作键。
+- WeakMap 结构与 Map 结构类似，也是用于生成键值对的集合。但是 WeakMap 只接受对象作为键名（ null 除外），不接受其他类型的值作为键名。而且 WeakMap 的键名所指向的对象，不计入垃圾回收机制。
+
+## 为什么函数的 arguments 参数是类数组而不是数组？如何遍历类数组?
+
+`arguments` 是一个对象，它的属性是从 0 开始依次递增的数字，还有 `callee` 和 `length` 等属性，与数组相似；但是它却没有数组常见的方法属性，如 `forEach`, `reduce` 等，所以叫它们类数组。
+要遍历类数组，有三个方法：
+
+### 将数组的方法应用到类数组上，这时候就可以使用 call 和 apply 方法，如
+
+```js
+function foo() {
+  Array.prototype.forEach.call(arguments, a => console.log(a))
+}
+```
+
+### 使用 Array.from 方法将类数组转化成数组：‌
+
+```js
+function foo() {
+  const arrArgs = Array.from(arguments)
+  arrArgs.forEach(a => console.log(a))
+}
+```
+
+### 使用展开运算符将类数组转化成数组
+
+```js
+function foo() {
+  const arrArgs = [...arguments]
+  arrArgs.forEach(a => console.log(a))
+}
+```
 
 ## 事件冒泡与捕获
 
@@ -71,7 +171,7 @@ null 表示一个"无"的对象，也就是该处不应该有值；而 undefined
 ES6:
 
 - Class
-- 模块import 和 export
+- 模块 import 和 export
 - 箭头函数
 - 函数默认参数
 - ...扩展运输符允许展开数组
@@ -85,13 +185,13 @@ ES6:
 ES7:
 
 - includes
-- **求幂运算符
+- \*\*求幂运算符
 
 ES8:
 
 - async/await
-- Object.values()和Object.entries()
-- padStart()和padEnd()
+- Object.values()和 Object.entries()
+- padStart()和 padEnd()
 - Object.getOwnPropertyDescriptors()
 - 函数参数允许尾部
 
@@ -107,9 +207,9 @@ ES10:
 - flat()
 - flatMap()
 - fromEntries()
-- trimStart和trimEnd
+- trimStart 和 trimEnd
 - matchAll
 - BigInt
-- try/catch 中报错允许没有err异常参数
+- try/catch 中报错允许没有 err 异常参数
 - Symbol.prototype.description
 - Function.toString() 调用时呈现原本源码的样子
