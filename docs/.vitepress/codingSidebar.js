@@ -20,6 +20,10 @@ export function codingSidebar() {
         {
           text: '层序遍历',
           link: 'level-order'
+        },
+        {
+          text: '二叉搜索树中第K小的元素',
+          link: 'kth-smallest'
         }
       ]
     },
