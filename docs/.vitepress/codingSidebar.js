@@ -10,12 +10,16 @@ export function codingSidebar() {
           link: 'js-basic-algorithm'
         },
         {
-          text: '查找父节点',
+          text: '二叉树查找父节点',
           link: 'find-parent-node'
         },
         {
           text: '二叉搜索树排序',
           link: 'bst-sort'
+        },
+        {
+          text: '层序遍历',
+          link: 'level-order'
         }
       ]
     },
