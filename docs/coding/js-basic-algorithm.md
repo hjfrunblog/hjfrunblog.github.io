@@ -1,13 +1,4 @@
----
-footer: false
-navbar: false
-sidebar: false
-lastUpdated: false
-prev: false
-next: false
----
-
-# 常见手写代码题
+# 基础手写题
 
 收集一些常见的基础的代码片段。
 
@@ -50,9 +41,9 @@ console.log({ reversedStr }) // { reversedStr: 'sgniteerG' }
 ## 回文 - palindrome
 
 ::: tip 描述
-判断是否回文  
-palindrome is a word that is spelled the same forwards and backwards  
-`palindrome('abba') === true`  
+判断是否回文
+palindrome is a word that is spelled the same forwards and backwards
+`palindrome('abba') === true`
 `palindrome('abcdefg') === false`
 :::
 ::: code-group

@@ -12,7 +12,7 @@ hero:
       link: /javascript/basic
     - theme: brand
       text: Coding
-      link: /coding/find-parent-node
+      link: /coding/js-basic-algorithm
     - theme: alt
       text: 生活
       link: /life/first-meet-su7

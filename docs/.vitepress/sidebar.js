@@ -10,10 +10,6 @@ export function sidebar() {
           link: 'basic'
         },
         {
-          text: 'JavaScript 进阶',
-          link: 'advanced'
-        },
-        {
           text: 'JavaScript 原型链',
           link: 'prototype'
         },

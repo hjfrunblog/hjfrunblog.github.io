@@ -75,14 +75,14 @@ function nav() {
       activeMatch: '/(javascript|frontend|vue|note)/'
     },
     {
-      text: 'Web3',
-      link: '/web3/overview',
-      activeMatch: '/web3/'
-    },
-    {
       text: 'Coding',
       link: '/coding/find-parent-node',
       activeMatch: '/coding/'
+    },
+    {
+      text: 'Web3',
+      link: '/web3/overview',
+      activeMatch: '/web3/'
     },
     {
       text: '生活',
