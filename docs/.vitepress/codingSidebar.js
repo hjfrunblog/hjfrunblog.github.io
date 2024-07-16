@@ -8,7 +8,7 @@ export function codingSidebar() {
         {
           text: 'JavaScript 基础算法题',
           link: 'js-basic-algorithm'
-      },
+        },
         {
           text: '查找父节点',
           link: 'find-parent-node'
@@ -28,6 +28,10 @@ export function codingSidebar() {
         {
           text: '实现Promise',
           link: 'promise'
+        },
+        {
+          text: '防抖和节流',
+          link: 'debounce-throttle'
         }
       ]
     }
