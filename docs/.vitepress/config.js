@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { sidebar } from './sidebar'
 import { web3Sidebar } from './web3Sidebar'
+import { codingSidebar } from './codingSidebar'
 import { sidebarLife } from './life'
 
 // https://vitepress.dev/reference/site-config
@@ -55,6 +56,7 @@ export default defineConfig({
       '/javascript': { items: sidebar() },
       '/vue': { items: sidebar() },
       '/web3': { items: web3Sidebar() },
+      '/coding': { items: codingSidebar() },
       '/note': { items: sidebar() },
       '/life/': { items: sidebarLife() }
     },
@@ -76,6 +78,11 @@ function nav() {
       text: 'Web3',
       link: '/web3/overview',
       activeMatch: '/web3/'
+    },
+    {
+      text: 'Coding',
+      link: '/coding/find-parent-node',
+      activeMatch: '/coding/'
     },
     {
       text: '生活',

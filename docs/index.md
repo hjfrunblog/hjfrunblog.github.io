@@ -10,6 +10,9 @@ hero:
     - theme: brand
       text: 技术
       link: /javascript/basic
+    - theme: brand
+      text: Coding
+      link: /coding/find-parent-node
     - theme: alt
       text: 生活
       link: /life/first-meet-su7

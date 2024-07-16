@@ -1,4 +1,4 @@
-# Sort an array using a binary search tree
+# 二叉搜索树排序
 
 ```js
 class TreeNode {

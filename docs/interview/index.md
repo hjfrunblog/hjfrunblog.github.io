@@ -23,7 +23,6 @@ next: false
 ## JavaScript
 
 - [Quick Coding](./quick-js-coding){target="_blank"}
-- [BST](./js-bst){target="_blank"}
 - [JS Trick](./js-tricks){target="_blank"}
 
 ## JD
