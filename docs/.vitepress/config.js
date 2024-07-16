@@ -76,7 +76,7 @@ function nav() {
     },
     {
       text: 'Coding',
-      link: '/coding/find-parent-node',
+      link: '/coding/js-basic-algorithm',
       activeMatch: '/coding/'
     },
     {

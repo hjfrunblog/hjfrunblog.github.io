@@ -1,7 +1,7 @@
 export function codingSidebar() {
   return [
     {
-      text: 'Coding',
+      text: '算法',
       base: '/coding/',
       collapsed: false,
       items: [
@@ -16,7 +16,14 @@ export function codingSidebar() {
         {
           text: '二叉搜索树排序',
           link: 'bst-sort'
-        },
+        }
+      ]
+    },
+    {
+      text: '手写',
+      base: '/coding/',
+      collapsed: false,
+      items: [
         {
           text: '实现call、apply、bind',
           link: 'call-apply-bind'
