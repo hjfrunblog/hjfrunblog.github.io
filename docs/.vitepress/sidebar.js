@@ -172,6 +172,10 @@ export function sidebar() {
         {
           text: 'Redis 学习笔记',
           link: 'learn-redis'
+        },
+        {
+          text: 'rax3000m nand刷机',
+          link: 'rax3000m-nand'
         }
       ]
     }
