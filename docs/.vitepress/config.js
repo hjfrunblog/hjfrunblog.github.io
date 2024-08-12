@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { sidebar } from './sidebar'
 import { web3Sidebar } from './web3Sidebar'
+import { noteSidebar } from './noteSideBar'
 import { codingSidebar } from './codingSidebar'
 import { sidebarLife } from './life'
 
@@ -57,7 +58,7 @@ export default defineConfig({
       '/vue': { items: sidebar() },
       '/web3': { items: web3Sidebar() },
       '/coding': { items: codingSidebar() },
-      '/note': { items: sidebar() },
+      '/note': { items: noteSidebar() },
       '/life/': { items: sidebarLife() }
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/hjfrun' }]
@@ -70,9 +71,9 @@ export default defineConfig({
 function nav() {
   return [
     {
-      text: '技术',
+      text: '前端',
       link: '/javascript/basic',
-      activeMatch: '/(javascript|frontend|vue|note)/'
+      activeMatch: '/(javascript|frontend|vue)/'
     },
     {
       text: 'Coding',
@@ -80,14 +81,19 @@ function nav() {
       activeMatch: '/coding/'
     },
     {
-      text: 'Web3',
-      link: '/web3/overview',
-      activeMatch: '/web3/'
+      text: '杂七杂八',
+      link: '/note/rax3000m-nand',
+      activeMatch: '/note/'
     },
     {
       text: '生活',
       link: '/life/first-meet-su7',
       activeMatch: '/life/'
+    },
+    {
+      text: 'Web3',
+      link: '/web3/overview',
+      activeMatch: '/web3/'
     },
     { text: '关于我', link: '/about-me' }
   ]

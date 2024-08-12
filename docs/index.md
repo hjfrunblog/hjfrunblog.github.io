@@ -8,11 +8,14 @@ hero:
   tagline: 天予不取，反受其咎；时至不行，反受其殃
   actions:
     - theme: brand
-      text: 技术
+      text: 前端
       link: /javascript/basic
     - theme: brand
       text: Coding
       link: /coding/js-basic-algorithm
+    - theme: brand
+      text: 折腾
+      link: /note/rax3000m-nand
     - theme: alt
       text: 生活
       link: /life/first-meet-su7
