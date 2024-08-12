@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { sidebar } from './sidebar'
 import { web3Sidebar } from './web3Sidebar'
-import { noteSidebar } from './noteSideBar'
+import { noteSidebar } from './noteSidebar'
 import { codingSidebar } from './codingSidebar'
 import { sidebarLife } from './life'
 
