@@ -174,8 +174,12 @@ export function sidebar() {
           link: 'learn-redis'
         },
         {
-          text: 'rax3000m nand刷机',
+          text: 'CMCC RAX3000M NAND 刷机',
           link: 'rax3000m-nand'
+        },
+        {
+          text: '二级路由配置',
+          link: 'sub-router-config'
         }
       ]
     }
