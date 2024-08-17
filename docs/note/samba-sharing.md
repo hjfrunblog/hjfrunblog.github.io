@@ -2,6 +2,8 @@
 
 【接前篇】
 
+## 配置访问
+
 家里主网络是几台华为 `Mesh` 组网，3 楼单独放了一个 `OpenWrt` 路由器作为二级路由器，负责访问外网。这个路由器还有一个 `USB3.0` 的接口，刚好把家里的闲置的移动硬盘挂上去，做一个轻 `NAS` 使用。
 
 硬盘昨天已经格式化安装上去了，配置很简单。按照简单的默认配置即可。已经达到的需求是已经可以通过 3 楼二级路由器都网络内，通过手机，MacBook，Windows 11 可以直接访问共享。
@@ -36,3 +38,13 @@ config rule
 	option dest_port '80'
 	option target 'ACCEPT'
 ```
+
+## 增加用户
+
+- 更改`/etc/passwd` 使用 yy 复制第一行，使用 p 直接粘贴在下面，然后做简单修改名字。这里改为如下
+  `hjf:x:0:0:He Jianfeng:/hjf:/bin/ash`
+- 修改密码：`passwd hjf`
+- 到这里，用户已经有了。接下来为用户添加 samba 密码。
+  `smbpasswd -a hjf`
+- 重启 samba 服务
+  `/etc/init.d/samba4 restart`
