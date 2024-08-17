@@ -39,6 +39,36 @@ config rule
 	option target 'ACCEPT'
 ```
 
+重启 SAMBA 服务
+
+```sh
+service samba4 restart
+```
+
+### Linux 文件管理
+
+更改权限
+
+```sh
+chmod -R 777 sda1
+chmod u=rwx g=r o=r *	// 所有者rwx，组r，其他r
+chmod u+x o-x * 		// 所有者加一个x，其他组减去x
+chmod a=rwx	*			// 全部设为rwx
+chmod a+r *				// 全部加上r
+```
+
+更改所有者
+
+```sh
+chown hjf *
+```
+
+更改所在组
+
+```sh
+chgrp 1001 *
+```
+
 ## 增加用户
 
 - 更改`/etc/passwd` 使用 yy 复制第一行，使用 p 直接粘贴在下面，然后做简单修改名字。这里改为如下
@@ -48,3 +78,17 @@ config rule
   `smbpasswd -a hjf`
 - 重启 samba 服务
   `/etc/init.d/samba4 restart`
+
+### 隐藏没有权限访问的目录
+
+更改模板
+
+```sh
+access based share enum = yes
+```
+
+### 切换用户
+
+```sh
+su root
+```
