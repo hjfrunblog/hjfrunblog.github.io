@@ -15,7 +15,7 @@
 主要核心注意如下：
 
 - 网络共享里面，默认 `SAMBA` 的接口是 `LAN`，需要把 `WAN` 打开
-- 防火墙也需要打开对应的接口，配置可以参考如下：
+- 防火墙也需要打开对应的接口，在文件`/etc/config/firewall`最后添加，配置可以参考如下：
 
 ```sh
 config rule
@@ -23,5 +23,16 @@ config rule
 	option src 'wan'
 	option proto 'tcp udp'
 	option dest_port '137 138 139 445'
+	option target 'ACCEPT'
+```
+
+另外在同样配置下增加一下内容，可以在主网络访问二级路由的后台配置页面。
+
+```sh
+config rule
+	option name 'Manage From Main'
+	option src 'wan'
+	option proto 'tcp'
+	option dest_port '80'
 	option target 'ACCEPT'
 ```
