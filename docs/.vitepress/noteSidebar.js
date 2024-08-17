@@ -1,7 +1,7 @@
 export function noteSidebar() {
   return [
     {
-      text: '杂七杂八',
+      text: '路由器相关',
       base: '/note/',
       collapsed: false,
       items: [
@@ -13,6 +13,17 @@ export function noteSidebar() {
           text: '二级路由配置',
           link: 'sub-router-config'
         },
+        {
+          text: '主网络访问二级路由挂载的移动硬盘',
+          link: 'samba-sharing'
+        }
+      ]
+    },
+    {
+      text: '杂七杂八',
+      base: '/note/',
+      collapsed: false,
+      items: [
         {
           text: 'Grafana 学习笔记',
           link: 'grafana'

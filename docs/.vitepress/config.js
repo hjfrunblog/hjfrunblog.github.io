@@ -81,7 +81,7 @@ function nav() {
       activeMatch: '/coding/'
     },
     {
-      text: '杂七杂八',
+      text: '折腾',
       link: '/note/rax3000m-nand',
       activeMatch: '/note/'
     },
