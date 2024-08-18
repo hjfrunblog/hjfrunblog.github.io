@@ -4,6 +4,7 @@ import { web3Sidebar } from './web3Sidebar'
 import { noteSidebar } from './noteSidebar'
 import { codingSidebar } from './codingSidebar'
 import { sidebarLife } from './life'
+import { csharpSidebar } from './csharpSidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -59,7 +60,8 @@ export default defineConfig({
       '/web3': { items: web3Sidebar() },
       '/coding': { items: codingSidebar() },
       '/note': { items: noteSidebar() },
-      '/life/': { items: sidebarLife() }
+      '/life/': { items: sidebarLife() },
+      '/csharp': { items: csharpSidebar() }
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/hjfrun' }]
   },
@@ -89,6 +91,11 @@ function nav() {
       text: 'Web3',
       link: '/web3/overview',
       activeMatch: '/web3/'
+    },
+    {
+      text: 'C#',
+      link: '/csharp/basic',
+      activeMatch: '/csharp/'
     },
     {
       text: '生活',
