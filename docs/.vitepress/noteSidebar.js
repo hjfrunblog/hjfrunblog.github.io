@@ -14,7 +14,7 @@ export function noteSidebar() {
           link: 'sub-router-config'
         },
         {
-          text: '主网络访问二级路由挂载的移动硬盘',
+          text: '主网络访问二级路由的硬盘',
           link: 'samba-sharing'
         }
       ]

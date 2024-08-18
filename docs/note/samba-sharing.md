@@ -1,4 +1,4 @@
-# 主网络访问二级路由挂载的移动硬盘
+# 主网络访问二级路由的硬盘
 
 【接前篇】
 
@@ -51,22 +51,17 @@ service samba4 restart
 
 ```sh
 chmod -R 777 sda1
-chmod u=rwx g=r o=r *	// 所有者rwx，组r，其他r
-chmod u+x o-x * 		// 所有者加一个x，其他组减去x
-chmod a=rwx	*			// 全部设为rwx
-chmod a+r *				// 全部加上r
+chmod u=rwx g=r o=r *	# 所有者rwx，组r，其他r
+chmod u+x o-x * 		# 所有者加一个x，其他组减去x
+chmod a=rwx	*			# 全部设为rwx
+chmod a+r *				# 全部加上r
 ```
 
-更改所有者
-
 ```sh
-chown hjf *
-```
-
-更改所在组
-
-```sh
-chgrp 1001 *
+# 更改所有者
+chown -R hjf *
+# 更改所在组
+chgrp -R 1001 *
 ```
 
 ## 增加用户
