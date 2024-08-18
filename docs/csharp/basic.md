@@ -1,6 +1,6 @@
 # C# 基础
 
-## 语法
+## 执行控制
 
 ### 1. switch
 
@@ -67,7 +67,9 @@ while (answer != sum)
 Console.WriteLine("Correct!");
 ```
 
-### 4. TryParse
+## string
+
+### 1. TryParse
 
 ```cs
 Console.Write("Enter a number: ");
@@ -82,3 +84,56 @@ else
     Console.WriteLine("Invalid input");
 }
 ```
+
+### 2. @ - Verbatim string literal
+
+```cs
+string path = "C:\\Users\\User\\Desktop\\MyFolder\\MyFile.txt";
+Console.WriteLine("Path: " + path);
+
+string path2 = @"C:\Users\User\Desktop\MyFolder\MyFile.txt";
+Console.WriteLine("Path2: " + path2);
+```
+
+### 3. string formatting
+
+```cs
+string name = "Jason";
+int age = 25;
+Console.WriteLine("Hello, my name is " + name + " and I am " + age + " years old.");
+Console.WriteLine("Hello, my name is {0} and I am {1} years old.", name, age);
+Console.WriteLine($"Hello, my name is {name} and I am {age} years old.");
+Console.WriteLine(string.Concat("Hello, my name is ", name, " and I am ", age, " years old."));
+
+string[] names = new string[] { "Jason", "John", "Jane" };
+Console.WriteLine(string.Join(", ", names));
+Console.WriteLine(string.Concat(names));
+```
+
+### 4. string equal
+
+```cs
+string message1 = "Hello World!";
+string message2 = "Hello World!";
+
+if (message1.Equals(message2))
+{
+    Console.WriteLine("The two strings are equal.");
+}
+else
+{
+    Console.WriteLine("The two strings are not equal.");
+}
+```
+
+### 5. string reverse
+
+```cs
+string message = Console.ReadLine();
+for (int i = 0; i < message.Length; i++)
+{
+    Console.Write(message[message.Length - i - 1]);
+}
+```
+
+## Array
