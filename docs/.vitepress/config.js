@@ -86,14 +86,14 @@ function nav() {
       activeMatch: '/note/'
     },
     {
-      text: '生活',
-      link: '/life/first-meet-su7',
-      activeMatch: '/life/'
-    },
-    {
       text: 'Web3',
       link: '/web3/overview',
       activeMatch: '/web3/'
+    },
+    {
+      text: '生活',
+      link: '/life/first-meet-su7',
+      activeMatch: '/life/'
     },
     { text: '关于我', link: '/about-me' }
   ]

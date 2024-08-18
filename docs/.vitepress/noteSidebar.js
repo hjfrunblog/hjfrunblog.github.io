@@ -16,6 +16,10 @@ export function noteSidebar() {
         {
           text: '主网络访问二级路由的硬盘',
           link: 'samba-sharing'
+        },
+        {
+          text: 'OpenWrt 中 TTYD 相关',
+          link: 'ttyd'
         }
       ]
     },
@@ -41,7 +45,7 @@ export function noteSidebar() {
           link: 'kafka-overview'
         },
         {
-          text: '一些Shell脚本',
+          text: '一些 Shell 脚本',
           link: 'shell'
         },
         {
