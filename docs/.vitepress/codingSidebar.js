@@ -24,6 +24,10 @@ export function codingSidebar() {
         {
           text: '二叉搜索树中第K小的元素',
           link: 'kth-smallest'
+        },
+        {
+          text: '找第二大的数',
+          link: '2nd-largest'
         }
       ]
     },
