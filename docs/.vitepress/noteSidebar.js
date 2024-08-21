@@ -29,6 +29,10 @@ export function noteSidebar() {
       collapsed: false,
       items: [
         {
+          text: 'Git 故障排除',
+          link: 'git-trouble-shooting'
+        },
+        {
           text: 'Grafana 学习笔记',
           link: 'grafana'
         },
