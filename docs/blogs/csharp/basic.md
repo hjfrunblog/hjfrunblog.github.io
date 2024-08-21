@@ -137,3 +137,70 @@ for (int i = 0; i < message.Length; i++)
 ```
 
 ## Array
+
+### 1. basic
+
+```cs
+const int angleCount = 3;
+int[] angles = new int[angleCount];
+int angleSum = 0;
+
+for (int i = 0; i < angleCount; i++)
+{
+    Console.Write($"Enter angle {i + 1}: ");
+    angles[i] = int.Parse(Console.ReadLine());
+    angleSum += angles[i];
+}
+
+Console.WriteLine(angleSum == 180 ? "The triangle is valid." : "The triangle is not valid.");
+```
+
+### 2. Sort
+
+```cs
+int[] numbers = new int[] { 1, 3234, 542, 652, 462, 42, 642, 4243 };
+Array.Sort(numbers);
+foreach(int num in numbers)
+{
+    Console.Write($"{num} ");
+}
+```
+
+### 3. Reverse
+
+```cs
+int[] numbers = new int[] { 1, 4, 23, 25, 5, 8 };
+Array.Reverse(numbers);
+foreach(var item in numbers)
+{
+    Console.Write($"{item} ");
+}
+```
+
+### 4. Clear
+
+```cs
+int[] numbers = new int[] { 1, 4, 23, 25, 5, 8 };
+Array.Clear(numbers, 0, numbers.Length);
+foreach(var item in numbers)
+{
+    Console.Write($"{item} ");
+}
+```
+
+### 5. IndexOf
+
+```cs
+int[] numbers = new int[] { 1, 4, 23, 25, 5, 8 };
+Console.WriteLine("Enter a number to search for in the array: ");
+int search = int.Parse(Console.ReadLine());
+
+int pos = Array.IndexOf(numbers, search);
+if (pos != -1)
+{
+    Console.WriteLine($"The number {search} is at position {pos + 1}");
+} else
+{
+    Console.WriteLine("The number is not in the array");
+}
+```
