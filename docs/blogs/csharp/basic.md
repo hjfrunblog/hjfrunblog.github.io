@@ -204,3 +204,52 @@ if (pos != -1)
     Console.WriteLine("The number is not in the array");
 }
 ```
+
+## List
+
+```cs
+int[] numbers = new int[3] { 1, 2, 3 };
+
+List<int> listNumbers = new List<int>();
+listNumbers.Add(1);
+listNumbers.Add(2);
+listNumbers.Add(3);
+
+List<int> listNumbers2 = new List<int>() { 23, 14, 2, 31, 54 };
+
+foreach(var item in listNumbers)
+{
+    Console.Write(item + " ");
+}
+```
+
+## Dictionary
+
+```cs
+Dictionary<int, string>names = new Dictionary<int, string>();
+names.Add(1, "John");
+names.Add(2, "Jane");
+names.Add(3, "Jack");
+
+foreach (KeyValuePair<int, string> name in names)
+{
+    Console.WriteLine("Key: {0}, Value: {1}", name.Key, name.Value);
+}
+
+Dictionary<string, string> teachers = new Dictionary<string, string>
+{
+    { "Math", "Mr. Smith" },
+    { "Science", "Mrs. Johnson" },
+    { "History", "Mr. Brown" }
+};
+
+if (teachers.ContainsKey("Math"))
+{
+    Console.WriteLine("Math teacher is {0}", teachers["Math"]);
+}
+
+if (teachers.TryGetValue("Science", out string scienceTeacher))
+{
+    Console.WriteLine("Science teacher is {0}", scienceTeacher);
+}
+```
