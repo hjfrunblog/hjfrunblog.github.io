@@ -253,3 +253,45 @@ if (teachers.TryGetValue("Science", out string scienceTeacher))
     Console.WriteLine("Science teacher is {0}", scienceTeacher);
 }
 ```
+
+## Exception
+
+### 1. try-catch
+
+```cs
+try
+{
+    Console.WriteLine("Enter a number: ");
+
+    int number = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine(number);
+}
+catch(OverflowException)
+{
+    Console.WriteLine("Number is too big or too small!");
+}
+catch (FormatException)
+{
+    Console.WriteLine("Please enter a number!");
+}
+catch (Exception)
+{
+    Console.WriteLine("Something has went wrong!");
+}
+```
+
+### 2. print error messages
+
+```cs
+try
+{
+    Console.WriteLine("Enter a number: ");
+
+    int number = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine(number);
+}
+catch (Exception e)
+{
+    Console.WriteLine($"Something has went wrong!: {e.Message}");
+}
+```
