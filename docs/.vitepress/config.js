@@ -5,6 +5,7 @@ import { noteSidebar } from './noteSidebar'
 import { codingSidebar } from './codingSidebar'
 import { sidebarLife } from './life'
 import { csharpSidebar } from './csharpSidebar'
+import { cloudnativeSidebar } from './cloudnativeSidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -64,6 +65,7 @@ export default defineConfig({
       '/coding': { items: codingSidebar() },
       '/note': { items: noteSidebar() },
       '/life/': { items: sidebarLife() },
+      '/cloudnative': { items: cloudnativeSidebar() },
       '/csharp': { items: csharpSidebar() }
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/hjfrun' }]
@@ -86,25 +88,35 @@ function nav() {
       activeMatch: '/coding/'
     },
     {
+      text: '云原生',
+      link: '/cloudnative/kubernetes',
+      activeMatch: '/cloudnative/'
+    },
+    {
       text: '折腾',
       link: '/note/rax3000m-nand',
       activeMatch: '/note/'
-    },
-    {
-      text: 'Web3',
-      link: '/web3/overview',
-      activeMatch: '/web3/'
-    },
-    {
-      text: 'C#',
-      link: '/csharp/basic',
-      activeMatch: '/csharp/'
     },
     {
       text: '生活',
       link: '/life/first-meet-su7',
       activeMatch: '/life/'
     },
-    { text: '关于我', link: '/about-me' }
+    {
+      text: '更多',
+      items: [
+        {
+          text: 'C#',
+          link: '/csharp/basic',
+          activeMatch: '/csharp/'
+        },
+        {
+          text: 'Web3',
+          link: '/web3/overview',
+          activeMatch: '/web3/'
+        },
+        { text: '关于我', link: '/about-me' },
+      ]
+    }
   ]
 }
