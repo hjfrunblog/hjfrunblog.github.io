@@ -5,7 +5,8 @@ export function cloudnativeSidebar() {
       base: '/cloudnative/',
       items: [
         { text: 'Docker 基础', link: 'docker-start' },
-        { text: 'Kubernetes 基础', link: 'kubernetes' }
+        { text: 'Kubernetes 基础', link: 'kubernetes' },
+        { text: 'Pod', link: 'pod' }
       ]
     }
   ]
