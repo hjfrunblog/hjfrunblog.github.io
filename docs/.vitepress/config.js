@@ -83,11 +83,6 @@ function nav() {
       activeMatch: '/(javascript|frontend|vue)/'
     },
     {
-      text: 'Coding',
-      link: '/coding/js-basic-algorithm',
-      activeMatch: '/coding/'
-    },
-    {
       text: '云原生',
       link: '/cloudnative/kubernetes',
       activeMatch: '/cloudnative/'
@@ -114,6 +109,11 @@ function nav() {
           text: 'Web3',
           link: '/web3/overview',
           activeMatch: '/web3/'
+        },
+        {
+          text: 'Coding',
+          link: '/coding/js-basic-algorithm',
+          activeMatch: '/coding/'
         },
         { text: '关于我', link: '/about-me' },
       ]
