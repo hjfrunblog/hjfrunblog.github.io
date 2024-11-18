@@ -44,4 +44,5 @@ k get pods nginx-pod --show-labels
 
 k get pods -o wide
 k get nodes -o wide
+k delete rs/nginx-rs
 ```
