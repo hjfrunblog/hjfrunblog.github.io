@@ -10,7 +10,8 @@ export function cloudnativeSidebar() {
         { text: 'Replica', link: 'replica' },
         { text: 'Deployment', link: 'deployment' },
         { text: 'Service', link: 'service' },
-        { text: 'Namespace', link: 'namespace' }
+        { text: 'Namespace', link: 'namespace' },
+        { text: 'ConfigMap', link: 'configmap' }
       ]
     }
   ]
