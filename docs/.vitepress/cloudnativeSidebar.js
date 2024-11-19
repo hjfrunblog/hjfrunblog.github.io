@@ -9,6 +9,7 @@ export function cloudnativeSidebar() {
         { text: 'Pod', link: 'pod' },
         { text: 'Replica', link: 'replica' },
         { text: 'Deployment', link: 'deployment' },
+        { text: 'Service', link: 'service' }
       ]
     }
   ]
