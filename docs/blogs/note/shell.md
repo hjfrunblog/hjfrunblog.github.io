@@ -1,6 +1,18 @@
-# 一些 shell 脚本
+# 一些 shell 命令
 
 ## 零散命令
+
+### base64 相关
+
+```sh
+# 转换字符
+echo -n "String" | base64
+echo "encodeed string" | base64 --decode > /app/decoded.txt
+```
+
+### md5
+
+`md5 README.md`
 
 ### Docker copy
 

@@ -49,7 +49,7 @@ export function noteSidebar() {
           link: 'kafka-overview'
         },
         {
-          text: '一些 Shell 脚本',
+          text: '一些 Shell 命令',
           link: 'shell'
         },
         {
