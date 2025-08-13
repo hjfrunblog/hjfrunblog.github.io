@@ -79,6 +79,10 @@ export function sidebar() {
       collapsed: false,
       items: [
         {
+          text: 'Vue 回顾',
+          link: 'vue-review'
+        },
+        {
           text: 'Vue2 数据绑定的原理',
           link: 'vue-data-binding'
         },
