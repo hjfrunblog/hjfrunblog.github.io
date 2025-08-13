@@ -105,7 +105,7 @@ async function increment() {
 
 v-for 可以直接接受一个整数值。在这种用例中，会将该模板基于 `1...n` 的取值范围重复多次。
 
-```vue
+```vue-html
 <span v-for="n in 10">{{ n }}</span>
 ```
 注意此处 n 的初值是从 1 开始而非 0。
@@ -114,7 +114,7 @@ v-for 可以直接接受一个整数值。在这种用例中，会将该模板�
 
 与模板上的 `v-if` 类似，你也可以在 `<template>` 标签上使用 `v-for` 来渲染一个包含多个元素的块。例如：
 
-```html
+```vue-html
 <ul>
   <template v-for="item in items">
     <li>{{ item.msg }}</li>
@@ -153,12 +153,12 @@ items.value = items.value.filter((item) => item.message.match(/Foo/))
 
 在监听键盘事件时，我们经常需要检查特定的按键。Vue 允许在 v-on 或 @ 监听按键事件时添加按键修饰符。
 
-```html
+```vue-html
 <!-- 仅在 `key` 为 `Enter` 时调用 `submit` -->
 <input @keyup.enter="submit" />
 ```
 你可以直接使用 KeyboardEvent.key 暴露的按键名称作为修饰符，但需要转为 kebab-case 形式。
-```html
+```vue-html
 <input @keyup.page-down="onPageDown" />
 ```
 在上面的例子中，仅会在 $event.key 为 'PageDown' 时调用事件处理。
@@ -188,7 +188,7 @@ Vue 为一些常用的按键提供了别名：
 
 举例来说：
 
-```html
+```vue-html
 <!-- Alt + Enter -->
 <input @keyup.alt.enter="clear" />
 
@@ -200,7 +200,7 @@ Vue 为一些常用的按键提供了别名：
 
 `.exact` 修饰符允许精确控制触发事件所需的系统修饰符的组合。
 
-```vue
+```vue-html
 <!-- 当按下 Ctrl 时，即使同时按下 Alt 或 Shift 也会触发 -->
 <button @click.ctrl="onClick">A</button>
 
@@ -219,7 +219,7 @@ Vue 为一些常用的按键提供了别名：
 
 如果你想让用户输入自动转换为数字，你可以在 v-model 后添加 .number 修饰符来管理输入：
 
-```vue
+```vue-html
 <input v-model.number="age" />
 ```
 
@@ -231,7 +231,7 @@ Vue 为一些常用的按键提供了别名：
 
 如果你想要默认自动去除用户输入内容中两端的空格，你可以在 v-model 后添加 .trim 修饰符：
 
-```vue
+```vue-html
 <input v-model.trim="msg" />
 ```
 
