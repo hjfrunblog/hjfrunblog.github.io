@@ -11,7 +11,7 @@ sidebar: false
 
 <div class="genius-name">贺剑峰</div>
 
-9 年工作经验 ｜ 硕士 ｜ 1989 年 10 月 ｜ 男 ｜ 所在地：上海宝山 ｜ 籍贯：湖北 鄂州
+10 年工作经验 ｜ 硕士 ｜ 1989 年 10 月 ｜ 男 ｜ 所在地：上海宝山 ｜ 籍贯：湖北 鄂州
 
 <hjfrun@zju.edu.cn>      (+86) 17602110571
 
@@ -38,9 +38,17 @@ sidebar: false
 <span class="h3color">工作经历</span>
 
 <div class="job-record">
+  <div class="job-company">马士基环球物流（上海）有限公司</div>
+  <div class="job-title">Senior Software Engineer</div>
+  <div class="time-span job-time-span">2022.1 ～ 2025.7</div>
+</div>
+
+深度参与公司的仓储及物流服务的开发。
+
+<div class="job-record">
   <div class="job-company">奥纬企业管理咨询（上海）有限公司</div>
   <div class="job-title">Senior Software Engineer</div>
-  <div class="time-span job-time-span">2019.1 ～ 至今</div>
+  <div class="time-span job-time-span">2019.1 ～ 2022.1</div>
 </div>
 
 深度参与公司的多个国内外项目，主要负责前端开发，并兼顾后端的研发。在这些项目中，使用到了多种不同技术栈及不同数据库，并且从编码到上线迭代，全程参与了项目的开发过程。此外，还积累了在 Azure、AWS、阿里云等多种云平台的使用经验，能够熟练运用这些平台进行云端部署和运维。同时，还有一些数据处理相关经验。包括数据抓取、数据分析、数据展示等。
