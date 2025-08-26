@@ -18,4 +18,11 @@ footer: false
 这个博客基于 **Vue** 和 **Vite** ，正好跟我的主要技术栈非常的匹配。这样感觉操作起来自由度比较高。希望后面用着顺心。
 
 后面打算在这里分享自己的一些学习笔记，然后也记录一下生活中有意思的事情。  
-加油！！！🍻👍
+加油！！！[🍻👍](./daily/index)
+
+<style module>
+a {
+  text-decoration: none !important;
+}
+
+</style>
