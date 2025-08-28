@@ -35,13 +35,13 @@ export default defineConfig({
       label: '页面导航'
     },
 
-    // lastUpdated: {
-    //   text: '最后更新于',
-    //   formatOptions: {
-    //     dateStyle: 'medium',
-    //     timeStyle: 'medium'
-    //   }
-    // },
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'medium',
+        timeStyle: 'medium'
+      }
+    },
 
     // footer: {
     //   message: '沪ICP备 <strong>2020025326</strong> 号',
@@ -115,7 +115,7 @@ function nav() {
           link: '/coding/js-basic-algorithm',
           activeMatch: '/coding/'
         },
-        { text: '关于我', link: '/about-me' },
+        { text: '关于我', link: '/about-me' }
       ]
     }
   ]

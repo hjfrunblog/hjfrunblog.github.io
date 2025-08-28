@@ -43,7 +43,7 @@ sidebar: false
   <div class="time-span job-time-span">2022.1 ～ 2025.7</div>
 </div>
 
-深度参与公司的仓储及物流服务的开发。
+参与公司多个项目开发，涉及仓储及物流服务，从前端到后端，以及运维等。使用到的相关技术主要有 VueJS，SQL，Kubernetes，Kafka，Azure，dotnet 等。
 
 <div class="job-record">
   <div class="job-company">奥纬企业管理咨询（上海）有限公司</div>
@@ -51,7 +51,7 @@ sidebar: false
   <div class="time-span job-time-span">2019.1 ～ 2022.1</div>
 </div>
 
-深度参与公司的多个国内外项目，主要负责前端开发，并兼顾后端的研发。在这些项目中，使用到了多种不同技术栈及不同数据库，并且从编码到上线迭代，全程参与了项目的开发过程。此外，还积累了在 Azure、AWS、阿里云等多种云平台的使用经验，能够熟练运用这些平台进行云端部署和运维。同时，还有一些数据处理相关经验。包括数据抓取、数据分析、数据展示等。
+参与公司的多个国内外项目，主要负责前端开发，并兼顾后端的研发。在这些项目中，使用到了多种不同技术栈及不同数据库，并且从编码到上线迭代，全程参与了项目的开发过程。此外，还积累了在 Azure、AWS、阿里云等多种云平台的使用经验，能够熟练运用这些平台进行云端部署和运维。同时，还有一些数据处理相关经验。包括数据抓取、数据分析、数据展示等。
 
 <div class="job-record">
   <div class="job-company">数麟数据科技（上海）有限公司</div>
@@ -69,21 +69,38 @@ sidebar: false
 
 迭代公司主营业务的 iOS 客户端，原名【PPTV】
 
-主要参与了 iOS 版本【聚力视频】的迭代和维护，包括 iPhone 和 iPad 端。主要涉及视频详情页以及个人中心等。完成了大量功能。使用的开发语言是 Objective-C。
+主要参与了 iOS 版本【聚力视频】的迭代和维护，包括 iPhone 和 iPad 端。主要涉及视频详情页以及个人中心等。完成了大量功能。
 
 <span class="h3color">项目经历</span>
 
 <div class="project-record">
-  <div>Label & Scan App</div>
+  <div> Zones & Rates Service【马士基】</div>
+  <div class="time-span">2024.11 ~ 2025.7</div>
+</div>
+这两个项目主要由本人所在的 MEC Carrier Management 部门管理和维护。根据客户提出的要求，以及PPO的梳理，不断的更新和迭代我们的API。具体而言：
+【Zones Service】在快递物流行业，Zones是一个核心概念，根据寄件地和收件地之间的距离，将地理区域划分为不同的等级或区域。这个划分是快递公司定价，计算运输时间和安排物流路线的基础。
+【Rates Service】根据包裹的大小，重量，类型等信息，计算收取的费用。
+这些服务都是部署在Azure的kubernetes 集群上。本人在其中负责迭代和维护多项功能。
+项目使用Grafana对API进行监测。使用Kafka队列进行消息管理。
+
+<div class="project-record">
+  <div>Maersk Tracking Service【马士基】</div>
+  <div class="time-span">2024.1 ~ 2024.11</div>
+</div>
+
+Maersk Tracking Service (MTS) 马士基跟踪服务。提供了一种物流信息聚合查询功能，定时或者手动跟踪多个运行商的运单号，将他们的物流信息汇总，给客户提供一致性的查询功能。运行商以及客户主要遍布欧美。该项目基于 dotnet 框架，使用 C#语言。
+
+<div class="project-record">
+  <div>Label & Scan App【马士基】</div>
   <div class="time-span">2023.1 ~ 2023.12</div>
 </div>
 
-客户是一家国际知名综合性集装箱物流巨头。其核心业务覆盖从仓储到物流。该项目是为其仓储部门升级其内部的扫描应用。有安卓手机版本和 RF 枪版本。使用混合架构。需要调用设备原生能力的部分用安卓原生来实现，如拍照，扫描等。其他页面及功能则使用 Vue 实现。项目支持 Android 9（API 28）及以后的系统，扫描枪支持 Zebra 和 Honeywell 各自两款设备。主要功能有登录、Profile 管理、数据管理、托盘管理、在线扫描、离线扫描、多语言，扫描枪快捷键的适配等。项目使用到的技术和语言主要有 Java、Vue、Docker、SQL Server、NestJS 等。项目已经成功上线，并运行在多个国家地区的仓库，如上海、宁波、印度、越南等。
+马士基是一家国际知名综合性集装箱物流巨头。其核心业务覆盖从仓储到物流。该项目是为其仓储部门升级其内部的扫描应用。有安卓手机版本和 RF 枪版本。使用混合架构。需要调用设备原生能力的部分用安卓原生来实现，如拍照，扫描等。其他页面及功能则使用 Vue 实现。项目支持 Android 9（API 28）及以后的系统，扫描枪支持 Zebra 和 Honeywell 各自两款设备。主要功能有登录、Profile 管理、数据管理、托盘管理、在线扫描、离线扫描、多语言，扫描枪快捷键的适配等。项目使用到的技术和语言主要有 Java、Vue、Docker、SQL Server、NestJS 等。项目已经成功上线，并运行在多个国家地区的仓库，如上海、宁波、印度、越南等。
 
 本人在其中主要负责了 Profile 管理、数据管理、主页、多语言、使用说明等模块开发，适配扫描枪快捷键等。
 
 <div class="project-record">
-  <div>Social Listening Asset</div>
+  <div>Social Listening Asset【奥纬】</div>
   <div class="time-span">2021.10 ~ 2022.11</div>
 </div>
 
@@ -95,7 +112,7 @@ sidebar: false
 有完整的用户鉴权，用到 JWT。其他用到的技术主要还有 MongoDB, ExpressJS, Vue 和 NodeJS，使用到 Vuetify 的 UI 库。项目部署在阿里云和 Azure。
 
 <div class="project-record">
-  <div><a href="https://climateactionnavigator.oliverwymanforum.com">Climate Action Navigator</a></div>
+  <div><a href="https://climateactionnavigator.oliverwymanforum.com">Climate Action Navigator【奥纬】</a></div>
   <div class="time-span">2021.2 ~ 2021.9</div>
 </div>
 
@@ -104,7 +121,7 @@ sidebar: false
 本人在该项目中主要承担的是前端 Web App 的开发。基于 Vue 框架，结合 D3js，绘制了大量丰富的图表来展示从后台获取的数据。并进行一系列的交互操作。该项目部分后端 API 使用到 Strapi 的 CMS。该项目在上线之后交由英国团队继续更新维护至目前版本。
 
 <div class="project-record">
-  <div>Digital insights Creation Engine（DICE）</div>
+  <div>Digital insights Creation Engine（DICE）【奥纬】</div>
   <div class="time-span">2019.11 ～ 2020.6</div>
 </div>
 
@@ -114,7 +131,7 @@ sidebar: false
 本人的任务是基于 Vue 框架创建的一个 Web app，方便客户根据输入的关键词和过滤条件从后端获取数据，然后以丰富的图表的形式展现这些数据，并进行交互。并为了和 Microsoft Power BI 进行连接还开发了自定义的 Visual。在这里用到的是 TypeScript。项目集成了客户要求的 Azure Active Directory 来管理用户鉴权。
 
 <div class="project-record">
-  <div>Bank Cyber Resilience</div>
+  <div>Bank Cyber Resilience【奥纬】</div>
   <div class="time-span">2019.2 ~ 2019.9</div>
 </div>
 
