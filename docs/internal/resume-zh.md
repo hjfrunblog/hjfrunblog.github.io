@@ -43,7 +43,7 @@ sidebar: false
   <div class="time-span job-time-span">2022.1 ～ 2025.7</div>
 </div>
 
-参与公司多个项目开发，涉及仓储及物流服务，从前端到后端，以及运维等。使用到的相关技术主要有 VueJS，SQL，Kubernetes，Kafka，Azure，dotnet 等。
+深度参与公司多个关键项目全流程开发，涵盖仓储物流、物流跟踪、费率计算等多个业务领域。技术栈设计 Vue.js、.Net(C#)、Docker、Kubernetes、Kafka、Azure、SQL Server 等，并在项目中承担从前端、后端到运维的多角色任务，具备跨平台与跨技术栈的实战能力。
 
 <div class="job-record">
   <div class="job-company">奥纬企业管理咨询（上海）有限公司</div>
@@ -77,31 +77,32 @@ sidebar: false
   <div> Zones & Rates Service【马士基】</div>
   <div class="time-span">2024.11 ~ 2025.7</div>
 </div>
-这两个项目主要由本人所在的 MEC Carrier Management 部门管理和维护。根据客户提出的要求，以及PPO的梳理，不断的更新和迭代我们的API。具体而言：
-【Zones Service】在快递物流行业，Zones是一个核心概念，根据寄件地和收件地之间的距离，将地理区域划分为不同的等级或区域。这个划分是快递公司定价，计算运输时间和安排物流路线的基础。
-【Rates Service】根据包裹的大小，重量，类型等信息，计算收取的费用。
-这些服务都是部署在Azure的kubernetes 集群上。本人在其中负责迭代和维护多项功能。
-项目使用Grafana对API进行监测。使用Kafka队列进行消息管理。
+负责该物流核心服务的迭代和维护，基于客户需求与产品规划持续优化API功能。Zones Service实现地理区域智能分级，支撑快递定价与路线规划；Rates Service依据包裹属性动态计算费用。系统部署于Azure Kubernetes集群，通过Grafana实现服务监控，依托Kafka进行一步消息处理，保障高可用与实时相应。
 
 <div class="project-record">
   <div>Maersk Tracking Service【马士基】</div>
   <div class="time-span">2024.1 ~ 2024.11</div>
 </div>
 
-Maersk Tracking Service (MTS) 马士基跟踪服务。提供了一种物流信息聚合查询功能，定时或者手动跟踪多个运行商的运单号，将他们的物流信息汇总，给客户提供一致性的查询功能。运行商以及客户主要遍布欧美。该项目基于 dotnet 框架，使用 C#语言。
+主导开发物流信息聚合查询服务，通过消费 Kafka 事件、定时任务与 WebHook 接收多运营商（以欧美为主）物流数据，统一存储并提供一致性的查询接口。项目基于 .NET 框架与 C# 实现，提升了物流数据的整合效率与查询体验。
 
 <div class="project-record">
   <div>Label & Scan App【马士基】</div>
   <div class="time-span">2023.1 ~ 2023.12</div>
 </div>
 
-马士基是一家国际知名综合性集装箱物流巨头。其核心业务覆盖从仓储到物流。该项目是为其仓储部门升级其内部的扫描应用。有安卓手机版本和 RF 枪版本。使用混合架构。需要调用设备原生能力的部分用安卓原生来实现，如拍照，扫描等。其他页面及功能则使用 Vue 实现。项目支持 Android 9（API 28）及以后的系统，扫描枪支持 Zebra 和 Honeywell 各自两款设备。主要功能有登录、Profile 管理、数据管理、托盘管理、在线扫描、离线扫描、多语言，扫描枪快捷键的适配等。项目使用到的技术和语言主要有 Java、Vue、Docker、SQL Server、NestJS 等。项目已经成功上线，并运行在多个国家地区的仓库，如上海、宁波、印度、越南等。
+为仓储部门开发跨设备扫描应用，支持 Android 手机与 Zebra、Honeywell 扫描枪。采用混合架构：原生模块处理扫描、拍照等硬件功能，Vue 实现业务界面。具备离线操作、多语言、快捷键适配等特性，已成功部署于中国、印度、越南等多地仓库。
 
-本人在其中主要负责了 Profile 管理、数据管理、主页、多语言、使用说明等模块开发，适配扫描枪快捷键等。
+<div class="project-record">
+  <div>Warehouse Management System【马士基】</div>
+  <div class="time-span">2022.1 ~ 2022.12</div>
+</div>
+
+深入理解仓储管理业务，通过编写和维护存储过程，结合 Crystal Reports 生成业务报表，支持仓库运营团队进行数据决策与日常操作，提升仓储管理效率与数据可视化水平。
 
 <div class="project-record">
   <div>Social Listening Asset【奥纬】</div>
-  <div class="time-span">2021.10 ~ 2022.11</div>
+  <div class="time-span">2021.10 ~ 2022.1</div>
 </div>
 
 该项目是要创建一个通用的 Social Listening 平台。方便不同咨询师对更多的行业进行可视化的数据分析获取有价值的商业洞见。提供多种数据源。可以由用户上传符合格式的数据，也可以通过 Twitter 或其他数据源 API 进行数据抓取。该服务部署在 Azure。
@@ -113,7 +114,7 @@ Maersk Tracking Service (MTS) 马士基跟踪服务。提供了一种物流信�
 
 <div class="project-record">
   <div><a href="https://climateactionnavigator.oliverwymanforum.com">Climate Action Navigator【奥纬】</a></div>
-  <div class="time-span">2021.2 ~ 2021.9</div>
+  <div class="time-span">2020.6 ~ 2021.9</div>
 </div>
 
 该项目将帮助企业及政府的高级领导人探索到 2030 年将碳排放量减少一半所需采取的行动，以避免气候变化带来的最严重的永久性影响。该项目基于科学支持的观点和洞见，一站式提供全面的脱碳途径信息。
