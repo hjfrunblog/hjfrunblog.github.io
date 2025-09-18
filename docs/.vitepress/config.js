@@ -6,6 +6,7 @@ import { codingSidebar } from './codingSidebar'
 import { sidebarLife } from './life'
 import { csharpSidebar } from './csharpSidebar'
 import { cloudnativeSidebar } from './cloudnativeSidebar'
+import { sidebarStock } from './stock'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -65,6 +66,7 @@ export default defineConfig({
       '/coding': { items: codingSidebar() },
       '/note': { items: noteSidebar() },
       '/life/': { items: sidebarLife() },
+      '/stock/': { items: sidebarStock() },
       '/cloudnative': { items: cloudnativeSidebar() },
       '/csharp': { items: csharpSidebar() }
     },
@@ -96,6 +98,11 @@ function nav() {
       text: '生活',
       link: '/life/first-meet-su7',
       activeMatch: '/life/'
+    },
+    {
+      text: '股票',
+      link: '/stock/basic',
+      activeMatch: '/stock/'
     },
     {
       text: '更多',
