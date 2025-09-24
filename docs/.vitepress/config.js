@@ -10,7 +10,7 @@ import { sidebarFire } from './fire'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: '渐风的个人博客',
+  title: '渐风的自由之路',
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' }]
   ],
@@ -85,11 +85,6 @@ function nav() {
       activeMatch: '/(javascript|frontend|vue)/'
     },
     {
-      text: '云原生',
-      link: '/cloudnative/kubernetes',
-      activeMatch: '/cloudnative/'
-    },
-    {
       text: '折腾',
       link: '/note/rax3000m-nand',
       activeMatch: '/note/'
@@ -107,6 +102,11 @@ function nav() {
     {
       text: '更多',
       items: [
+        {
+          text: '云原生',
+          link: '/cloudnative/kubernetes',
+          activeMatch: '/cloudnative/'
+        },
         {
           text: 'C#',
           link: '/csharp/basic',

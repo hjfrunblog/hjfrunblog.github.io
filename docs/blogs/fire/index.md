@@ -4,7 +4,7 @@
 
 即 `Financial Independence, Retire Early`.
 
-财务独立，提前退休。
+财务自由，提前退休。
 
 这是我在 40 岁之前的目标。
 
