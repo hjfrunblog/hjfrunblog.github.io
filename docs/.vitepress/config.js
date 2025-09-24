@@ -6,7 +6,7 @@ import { codingSidebar } from './codingSidebar'
 import { sidebarLife } from './life'
 import { csharpSidebar } from './csharpSidebar'
 import { cloudnativeSidebar } from './cloudnativeSidebar'
-import { sidebarStock } from './stock'
+import { sidebarFire } from './fire'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -66,7 +66,7 @@ export default defineConfig({
       '/coding': { items: codingSidebar() },
       '/note': { items: noteSidebar() },
       '/life/': { items: sidebarLife() },
-      '/stock/': { items: sidebarStock() },
+      '/fire/': { items: sidebarFire() },
       '/cloudnative': { items: cloudnativeSidebar() },
       '/csharp': { items: csharpSidebar() }
     },
@@ -100,9 +100,9 @@ function nav() {
       activeMatch: '/life/'
     },
     {
-      text: '股票',
-      link: '/stock/basic',
-      activeMatch: '/stock/'
+      text: '财务自由',
+      link: '/fire/',
+      activeMatch: '/fire/'
     },
     {
       text: '更多',
