@@ -4,6 +4,8 @@
 
 即 `Financial Independence, Retire Early`.
 
+敬畏市场，市场永远没有错！！！错的是自己，反省自身！！！
+
 财务自由，提前退休。
 
 这是我在 40 岁之前的目标。
