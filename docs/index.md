@@ -13,9 +13,9 @@ hero:
     - theme: brand
       text: Coding
       link: /coding/js-basic-algorithm
-    - theme: brand
-      text: 折腾
-      link: /note/rax3000m-nand
+    - theme: alt
+      text: 自由
+      link: /fire/
     - theme: alt
       text: 生活
       link: /life/first-meet-su7

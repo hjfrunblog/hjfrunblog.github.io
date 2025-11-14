@@ -5,6 +5,10 @@ export function sidebarFire() {
       link: '/fire/'
     },
     {
+      text: '感悟',
+      link: '/fire/insights/'
+    },
+    {
       text: '复盘',
       base: '/fire/review/',
       items: [{ text: '2025年11月', link: 'r-2025-11' }]
