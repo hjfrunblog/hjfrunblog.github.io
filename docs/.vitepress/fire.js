@@ -23,6 +23,7 @@ export function sidebarFire() {
       base: '/fire/stock/',
       items: [
         { text: '大A个股研究', link: 'a-heroes' },
+        { text: '固态电池专题', link: 'solid-state-battery' },
         { text: '2025复盘', link: 'review-2025' },
         { text: '基础', link: 'basic' },
         { text: '开窍', link: 'enlighten' },
